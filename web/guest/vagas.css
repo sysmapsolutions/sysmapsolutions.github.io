@@ -1,7 +1,7 @@
 .s-page-title .s-btn {
     width: 200px;
     background: #00a1f1;
-    color: white;
+    color: #dedede;
     padding: 10px;
     border: 0;
     font-family: dinregular;
@@ -13,4 +13,9 @@
     -o-border-radius: 6px;
     border-radius: 6px;
     text-align: center;
+}
+
+.s-page-title .s-btn:hover{
+	text-decoration: none;
+	color: white;
 }
