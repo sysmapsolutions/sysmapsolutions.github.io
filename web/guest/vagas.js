@@ -5,7 +5,9 @@ function SysMap_Vaga(codigo) {
 
 	function vagaRetornada(dados){
 		this.dados = dados;
-		console.info(this);
+		console.debug(this);
+
+		this.render();
 	}
 
 	$.ajax({
@@ -16,7 +18,7 @@ function SysMap_Vaga(codigo) {
 }
 
 SysMap_Vaga.prototype.render = function() {
-
+	$("[class='sysmap-vaga-nome']").html(this.dados["Nome"]);
 }
 
 {
