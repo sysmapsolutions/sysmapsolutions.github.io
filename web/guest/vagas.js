@@ -19,6 +19,20 @@ function SysMap_Vaga(codigo) {
 
 SysMap_Vaga.prototype.render = function() {
 	$("[class='sysmap-vaga-nome']").html(this.dados["Nome"]);
+
+	var dados = this.dados["Descrição"];
+
+	var ultimoIndice = -1;
+	var ultimoElemento;
+	$("[class='sysmap-vaga-descricao']").each(function(i){
+		if(i < dados.length){
+			ultimoIndice = i;
+			ultimoElemento = $(this);
+			ultimoElemento.html(dados[ultimoIndice]);
+		}else{
+
+		}
+	});
 }
 
 {
