@@ -18,7 +18,7 @@ function SysMap_Vaga(codigo) {
 }
 
 SysMap_Vaga.prototype.bindField = function(seletor, campo){
-	$(seletor).html(this.dados[field]);
+	$(seletor).html(this.dados[campo]);
 }
 
 SysMap_Vaga.prototype.bindList = function(seletor, campo){
