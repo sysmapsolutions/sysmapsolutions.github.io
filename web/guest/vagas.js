@@ -1,5 +1,14 @@
+var SysMap_VAGA_URL_PREFIX = "";
+
 function SysMap_Vaga(codigo) {
 	this.codigo = codigo;
+
+	function vagaRetornada(){
+		console.info(arguments);
+	}
+
+	$.ajax("vagas/"+codigo+".json").done(vagaRetornada);
+
 }
 
 SysMap_Vaga.prototype.render = function() {
