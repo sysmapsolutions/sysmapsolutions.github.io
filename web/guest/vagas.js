@@ -17,14 +17,16 @@ function SysMap_Vaga(codigo) {
 
 }
 
-SysMap_Vaga.prototype.render = function() {
-	$("[class='sysmap-vaga-nome']").html(this.dados["Nome"]);
+SysMap_Vaga.prototype.bindField = function(seletor, campo){
+	$(seletor).html(this.dados[field]);
+}
 
-	var dados = this.dados["Descrição"];
+SysMap_Vaga.prototype.bindList = function(seletor, campo){
+	var dados = this.dados[campo];
 
 	var ultimoIndice = -1;
 	var ultimoElemento;
-	$("[class='sysmap-vaga-descricao']").each(function(i){
+	$(seletor).each(function(i){
 		if(i < dados.length){
 			ultimoIndice = i;
 			ultimoElemento = $(this);
@@ -43,6 +45,14 @@ SysMap_Vaga.prototype.render = function() {
 			ultimoElemento = clone;
 		}
 	}
+}
+
+SysMap_Vaga.prototype.render = function() {
+	this.bindField("[class='sysmap-vaga-codigo']", "Código");
+	this.bindField("[class='sysmap-vaga-nome']", "Nome");
+
+	this.bindList("[class='sysmap-vaga-descricao']", "Descrição");
+	this.bindList("[class='sysmap-vaga-reponsabilidades']", "Responsabilidades");
 }
 
 {
