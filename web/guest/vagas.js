@@ -18,8 +18,7 @@ function SysMap_Vaga(codigo) {
 }
 
 SysMap_Vaga.prototype.render = function() {
-	console.debug($("[class='sysmap-vaga-nome']"));
-	//.html(this.dados["Nome"]);
+	$("[class='sysmap-vaga-nome']").html(this.dados["Nome"]);
 }
 
 {
