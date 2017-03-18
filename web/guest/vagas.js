@@ -31,6 +31,7 @@ SysMap_Vaga.prototype.bindList = function(seletor, campo){
 			ultimoIndice = i;
 			ultimoElemento = $(this);
 			ultimoElemento.html(dados[ultimoIndice]);
+			ultimoElemento.show(0);
 		}else{
 			$(this).hide(0);
 		}
@@ -53,6 +54,8 @@ SysMap_Vaga.prototype.render = function() {
 
 	this.bindList("[class='sysmap-vaga-descricao']", "Descrição");
 	this.bindList("[class='sysmap-vaga-reponsabilidades']", "Responsabilidades");
+	this.bindList("[class='sysmap-vaga-experiencias']", "Educação e Experiências");
+	this.bindList("[class='sysmap-vaga-atributos']", "Atributos Pessoais");
 }
 
 {
