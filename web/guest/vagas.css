@@ -1,19 +1,20 @@
 .s-page-title .s-btn {
-    width: 200px;
-    background: #00a1f1;
-    color: #dedede;
-    padding: 10px;
-    border: 0;
-    font-family: dinregular;
-    display: block;
-    text-decoration: none;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-    border-radius: 6px;
-    text-align: center;
+	width: 200px;
+	background: #00a1f1;
+	color: #dedede;
+	padding: 10px;
+	border: 0;
+	font-family: dinregular;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	text-align: center;
 	font-size: 22px;
+	line-height: 26px;
 }
 
 .s-page-title .s-btn:hover{
