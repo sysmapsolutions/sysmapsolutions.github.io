@@ -33,6 +33,16 @@ SysMap_Vaga.prototype.render = function() {
 			$(this).hide(0);
 		}
 	});
+
+	if(ultimoIndice >= 0){
+		while(ultimoIndice < dados.length - 1){
+			ultimoIndice++;
+			var clone = ultimoElemento.clone();
+			clone.html(dados[ultimoIndice]);
+			ultimoElemento.after(clone);
+			ultimoElemento = clone;
+		}
+	}
 }
 
 {
