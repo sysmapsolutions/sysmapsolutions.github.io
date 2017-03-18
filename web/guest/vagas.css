@@ -13,6 +13,7 @@
     -o-border-radius: 6px;
     border-radius: 6px;
     text-align: center;
+	font-size: 22px;
 }
 
 .s-page-title .s-btn:hover{
