@@ -24,3 +24,9 @@
 	font-family: dinregular;
 	font-weight: bold;
 }
+
+.page-internal li {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: din_lightregular;
+}
