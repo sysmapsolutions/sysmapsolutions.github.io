@@ -8,7 +8,10 @@ function SysMap_Vaga(codigo) {
 		console.info(this);
 	}
 
-	$.ajax(SysMap_VAGA_URL_PREFIX.format(codigo)).done(vagaRetornada);
+	$.ajax({
+		url: SysMap_VAGA_URL_PREFIX.format(codigo),
+		context: this
+	}).done(vagaRetornada);
 
 }
 
