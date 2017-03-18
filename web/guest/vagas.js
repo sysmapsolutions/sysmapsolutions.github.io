@@ -53,7 +53,7 @@ SysMap_Vaga.prototype.render = function() {
 	this.bindField("[class='sysmap-vaga-nome']", "Nome");
 
 	this.bindList("[class='sysmap-vaga-descricao']", "Descrição");
-	this.bindList("[class='sysmap-vaga-reponsabilidades']", "Responsabilidades");
+	this.bindList("[class='sysmap-vaga-responsabilidades']", "Responsabilidades");
 	this.bindList("[class='sysmap-vaga-experiencias']", "Educação e Experiências");
 	this.bindList("[class='sysmap-vaga-atributos']", "Atributos Pessoais");
 }
