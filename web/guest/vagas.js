@@ -30,7 +30,7 @@ SysMap_Vaga.prototype.render = function() {
 			ultimoElemento = $(this);
 			ultimoElemento.html(dados[ultimoIndice]);
 		}else{
-
+			$(this).hide(0);
 		}
 	});
 }
