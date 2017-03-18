@@ -1,0 +1,38 @@
+{
+	"Código": 2865,
+	"Nome": "Consultor Técnico de Pré-Venda",
+	"Descrição": [
+		"É responsável por conduzir o trabalho de consultoria técnica durante o ciclo de venda em colaboração com as equipes comercial, operação, cliente e parceiros para apresentar a melhor proposta de serviço ou solução para o cliente.",
+		"Ele entende as necessidades dos clientes, concebe uma visão inicial da solução, combina as ofertas de serviços e produtos da SysMap e parceiros e constrói uma proposta de solução para o cliente e direciona a equipe de operação para o sucesso na entrega do projeto."
+	],
+	"Responsabilidades": [
+		"Criar de propostas e materiais de venda",
+		"Conduzir pesquisas de mercado e construir pontos de vista (PoVs) em soluções digitais e tendências de tecnologia",
+		"Conduzir e gerenciar elaboração de propostas",
+		"Criar respostas à RFIs e RFPs",
+		"Preparar e conduzir apresentações aos clientes",
+		"Apoiar visitas à clientes e prospects",
+		"Conduzir com a equipe de operação a revisão da proposta de solução e captura de estimativas de esforço, custo e prazo",
+		"Consolidar estimativas de esforço e custo e modelo de negócio para receita juntamente com o comercial",
+		"Realizar alinhamento inicial da proposta com a equipe do projeto após a confirmação de venda",
+		"Consolidar e refinar estudos de caso de projetos relevantes para a área comercial",
+		"Organizar e apresentar eventos educacionais internos, para parceiros e clientes",
+		"Colaborar no desenvolvimento de aceleradores de práticas e soluções digitais"
+	],
+	"Educação e Experiência": [
+		"Graduação ou pós-graduação na área de tecnologia da informação",
+		"5 anos ou mais de experiência na área de tecnologia da informação, preferencialmente em funções de pré-venda, arquitetura ou consultoria",
+		"1 ano ou mais de experiência em função de pré-venda",
+		"Essencial experiência em métodos de estimativa, como function points, story points, use case points, etc",
+		"Diferencial experiência e conhecimento em competências digitais: design, analytics, cloud, mobilidade, IoT, e-commerce, CMS, API, etc",
+		"Diferencial experiência e conhecimento em metodologias lean e agile: Scrum, Kanban, Lean Startup"
+	],
+	"Atributos Pessoais": [
+		"Atitude motivada e com iniciativa para buscar o sucesso das ações de negócio do cliente e da SysMap",
+		"Capacidade de aprender rapidamente novos conhecimentos e tecnologias",
+		"Excelentes habilidades de comunicação e apresentação",
+		"Excelente capacidade analítica e habilidade para desenhar soluções e modelos de negócio inovadores",
+		"Capacidade de relacionamento (networking) com as várias áreas da SysMap, parceiros e clientes",
+		"Capacidade de gestão de atividades próprias, da equipe de pré-vendas e de outras áreas"
+	]
+}
