@@ -49,6 +49,12 @@ SysMap_Vaga.prototype.bindList = function(seletor, campo){
 }
 
 SysMap_Vaga.prototype.render = function() {
+	Google_Tag.push({
+		"sysmap-vaga-codigo": this.codigo,
+		"sysmap-vaga-codigo": this.dados["Nome"]
+	});
+
+
 	this.bindField("[class='sysmap-vaga-codigo']", "Código");
 	this.bindField("[class='sysmap-vaga-nome']", "Nome");
 
