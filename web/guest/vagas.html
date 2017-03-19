@@ -8,15 +8,15 @@
 	<script>
 	  Google_Tag = [];
 	</script>
-	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','Google_Tag','GTM-TXLZ2SS');</script>
-	<!-- End Google Tag Manager -->
+	End Google Tag Manager -->
 
-	<!-- Google Analytics -->
+	<!-- Google Analytics
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,9 +24,16 @@
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 	ga('create', 'UA-93986043-1', 'auto');
-	ga('send', 'pageview');
+	//ga('send', 'pageview');
+
+	var ga_page = "/vagas";
+	if(window.location.hash){
+		ga_page += "/" + window.location.hash.substring(1);
+	}
+
+	//ga("send", "pageview", ga_page);
 	</script>
-	<!-- End Google Analytics -->
+	End Google Analytics -->
 
 	<link rel="apple-touch-icon" sizes="57x57" href="https://sysmapsolutions.github.io/sysmap-theme/images/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="https://sysmapsolutions.github.io/sysmap-theme/images/apple-icon-60x60.png">
@@ -297,6 +304,7 @@
 	<script type="text/javascript">
 		Liferay.Portlet.list = ["73_INSTANCE_GnWdmsD1KUAb", "56_INSTANCE_aK7RQCDJwIgD", "56_INSTANCE_ZkwIMsUzvGXY", "56_INSTANCE_WW0EHm59gb1m", "15", "58", "82"];
 	</script>
+	<!--
 	<script type="text/javascript">
 		(function(d, e, j, h, f, c, b) {
 			d.GoogleAnalyticsObject = f;
@@ -313,14 +321,9 @@
 			b.parentNode.insertBefore(c, b)
 		})(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
 		ga("create", "UA-77317508-1", "auto");
-
-		var ga_page = "/vagas";
-		if(window.location.hash){
-			ga_page += "/" + window.location.hash.substring(1);
-		}
-
-		ga("send", "pageview", ga_page);
+		ga("send", "pageview");
 	</script>
+	-->
 	<script src="https://sysmapsolutions.github.io/html/portlet/journal/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=pt_BR&amp;b=6210&amp;t=1487700523000" type="text/javascript"></script>
 	<script src="https://sysmapsolutions.github.io/html/portlet/journal/js/navigation.js?browserId=other&amp;minifierType=js&amp;languageId=pt_BR&amp;b=6210&amp;t=1487700523000" type="text/javascript"></script>
 	<link class="lfr-css-file" href="https://sysmapsolutions.github.io&#x2f;sysmap-theme&#x2f;css&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;sysmap_WAR_sysmaptheme&#x26;minifierType&#x3d;css&#x26;languageId&#x3d;pt_BR&#x26;b&#x3d;6210&#x26;t&#x3d;1462326412000"
@@ -359,10 +362,10 @@
 </head>
 
 <body class=" yui3-skin-sam controls-visible guest-site signed-out public-page site">
-	<!-- Google Tag Manager (noscript) -->
+	<!-- Google Tag Manager (noscript)
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXLZ2SS"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+	End Google Tag Manager (noscript) -->
 
 	<div class="page-wrap">
 		<a href="#main-content" id="skip-to-content"> <span class="aui-helper-hidden-accessible">Pular para o conteúdo</span> </a>
