@@ -62,11 +62,19 @@ SysMap_Vaga.prototype.render = function() {
 		ga_page += "/" + this.codigo;
 	}
 
-	ga('send', {
-		hitType: 'pageview',
+	ga("send", {
+		hitType: "pageview",
 		location: location.href,
 		page: ga_page,
 		title: this.dados["Nome"]
+	});
+
+	ga("send", {
+		hitType: "event",
+		eventCategory: "SysMap Vagas",
+		eventAction: "ver",
+		eventLabel: "vaga",
+		eventValue: this.codigo
 	});
 
 	this.bindField("[class='sysmap-vaga-codigo']", "Código");
