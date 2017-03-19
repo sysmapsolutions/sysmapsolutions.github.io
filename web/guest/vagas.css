@@ -49,6 +49,12 @@
     margin-bottom: 15px;
 }
 
-.aui h3 {
+.page-internal h3 {
     font-size: 30px;
+		line-height: 40px;
+}
+
+.page-internal h4 {
+    font-size: 20px;
+		line-height: 30px;
 }
