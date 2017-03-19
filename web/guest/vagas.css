@@ -37,7 +37,7 @@
 }
 
 .formArea {
-    border-width: 1px;
+    border-width: 0;
     border-style: solid;
     border-color: #e4e4e4;
     padding: 30px;
