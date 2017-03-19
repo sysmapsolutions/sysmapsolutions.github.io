@@ -5,8 +5,6 @@ function SysMap_Vaga(codigo) {
 
 	function vagaRetornada(dados){
 		this.dados = dados;
-		console.debug(this);
-
 		this.render();
 	}
 
