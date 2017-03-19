@@ -57,6 +57,17 @@ SysMap_Vaga.prototype.render = function() {
 	});
 	*/
 
+	var ga_page = "/vagas";
+	if(codigo){
+		ga_page += "/" + this.codigo;
+	}
+
+	ga('send', {
+		hitType: 'pageview',
+		location: location.href,
+		page: ga_page,
+		title: this.dados["Nome"]
+	});
 
 	this.bindField("[class='sysmap-vaga-codigo']", "Código");
 	this.bindField("[class='sysmap-vaga-nome']", "Nome");
