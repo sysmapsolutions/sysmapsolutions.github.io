@@ -44,3 +44,7 @@
     max-width: 980px;
     margin: 0 auto 30px;
 }
+
+.page-container .row {
+    margin-bottom: 15px;
+}
