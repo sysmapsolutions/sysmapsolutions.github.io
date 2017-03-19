@@ -73,8 +73,7 @@ SysMap_Vaga.prototype.render = function() {
 		hitType: "event",
 		eventCategory: "SysMap Vagas",
 		eventAction: "ver",
-		eventLabel: "vaga",
-		eventValue: this.codigo
+		eventLabel: "vaga/" + this.codigo
 	});
 
 	this.bindField("[class='sysmap-vaga-codigo']", "Código");
