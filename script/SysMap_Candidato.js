@@ -44,7 +44,7 @@ SysMap_Candidato = (function () {
 	}
 
 	function carregar(){
-		IN.Event.on(IN, "auth", candidatoAutorizado);
+		IN.Event.on(IN, "auth", candidatoAutorizado, this);
 	}
 
 	return {
