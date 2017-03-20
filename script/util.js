@@ -30,3 +30,8 @@ var QueryString = function () {
   }
   return query_string;
 }();
+
+function URLParser(url){
+	this.link = document.createElement("a");
+	this.link.href = href;
+}
