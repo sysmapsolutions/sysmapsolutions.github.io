@@ -6,13 +6,19 @@ function SysMap_Vaga(codigo) {
 
 	function vagaRetornada(dados){
 		this.dados = dados;
+		SysMap_Analytics_sendPageview(vaga);
 		this.render();
+	}
+
+	function vagaNaoRetornada(){
+		SysMap_Analytics_sendPageview(vaga);
+		console.debug(arguments);
 	}
 
 	$.ajax({
 		url: SysMap_VAGA_URL_PREFIX.format(codigo),
 		context: this
-	}).done(vagaRetornada);
+	}).done(vagaRetornada).fail(vagaNaoRetornada);
 
 }
 
@@ -68,7 +74,17 @@ SysMap_Vaga.prototype.render = function() {
 }
 
 function SysMap_Analytics_sendPageview(vaga){
-	ga("send", "pageview");
+	var page = "/vagas";
+	if(vaga.codigo){
+		page += "/" + vaga.codigo;
+	}
+
+	ga("send", {
+		hitType: "pageview",
+		location: location.href,
+		page: page,
+		title: vaga.dados["Nome"]
+	});
 }
 
 function SysMap_Analytics_sendEvent(vaga){
@@ -84,5 +100,5 @@ function SysMap_Analytics_sendEvent(vaga){
 {
 	var codigo = QueryString.codigo;
 	var vaga = new SysMap_Vaga(codigo);
-	SysMap_Analytics_sendPageview(vaga);
+
 }
