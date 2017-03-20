@@ -136,7 +136,7 @@ function SysMap_LinkedIn_profileRetrieved(data){
 		dados.industria = value.industry;
 		dados.foto = value.pictureUrl;
 		dados.descricao = value.summary;
-		dados.perfil = URLParser(value.publicProfileUrl).pathname;
+		dados.perfil = (new URLParser(value.publicProfileUrl)).pathname;
 
 		$("#sysmap-candidato-nome").val(dados.nome);
 		$("#sysmap-candidato-email").val(dados.email);
