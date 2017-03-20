@@ -128,14 +128,26 @@ function SysMap_LinkedIn_userAuthorized(){
 			"picture-urls::(original)",
 			"site-standard-profile-request",
 			"api-standard-profile-request",
-			"public-profile-url"
+			"public-profile-url",
+			"email-address"
 		)
 		.result(SysMap_LinkedIn_profileRetrieved);
 	}
 }
 
-function SysMap_LinkedIn_profileRetrieved(dados){
+function SysMap_LinkedIn_profileRetrieved(data){
 	console.debug(dados);
+
+	var dados = {};
+
+	if(data.values && data.values.length > 0){
+		var value = data.values[0];
+
+		dados.nome = value.formattedName;
+		dados.localidade = value.location? value.location.name;
+		dados.descricao = value.summary;
+		dados.url = value.publicProfileUrl;
+	}
 }
 
 function SysMap_Candidato_Salvar(){
