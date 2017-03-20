@@ -4,11 +4,13 @@ SysMap_Vaga = function () {
 	this.codigo;
 	this.dados = {};
 
-	function vagaRetornada(){
+	function vagaRetornada(dados){
 		console.debug({
 			this:this,
 			arguments:arguments
 		});
+		this.dados = dados;
+		SysMap_Analytics.enviarVaga();
 	}
 
 	function vagaNaoRetornada(){
@@ -16,9 +18,13 @@ SysMap_Vaga = function () {
 			this:this,
 			arguments:arguments
 		});
+		SysMap_Analytics.enviarVaga();
 	}
 
 	function carregar(codigo){
+		this.codigo = codigo;
+		this.dados = {};
+
 		$.ajax({
 			url: SysMap_VAGA_URL_PREFIX.format(codigo),
 			context: this
