@@ -53,6 +53,9 @@ SysMap_Analytics = (function () {
 	}
 
 	return {
-		enviarVaga: enviarVaga
+		enviarVaga: enviarVaga,
+		enviarCandidatoLinkedIn: enviarCandidatoLinkedIn,
+		enviarCandidatoEmail: enviarCandidatoEmail,
+		enviarCandidatoSubmete: enviarCandidatoSubmete
 	}
 })();
