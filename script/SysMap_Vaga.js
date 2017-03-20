@@ -5,17 +5,17 @@ SysMap_Vaga = function () {
 	this.dados = {};
 
 	function vagaRetornada(){
-		console.debug(
+		console.debug({
 			this:this,
 			arguments:arguments
-		);
+		});
 	}
 
 	function vagaNaoRetornada(){
-		console.debug(
+		console.debug({
 			this:this,
 			arguments:arguments
-		);
+		});
 	}
 
 	function carregar(codigo){
