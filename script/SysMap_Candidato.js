@@ -23,24 +23,29 @@ SysMap_Candidato = (function () {
 		}
 	}
 
-	function candidatoRetornado(){
-			console.debug({
-				this: SysMap_Candidato,
-				arguments: arguments
-			});
-/*
-			if(data.values && data.values.length > 0){
-				var value = data.values[0];
+	function candidatoRetornado(data){
 
-				dados.nome = value.formattedName;
-				dados.email = value.emailAddress;
-				dados.localidade = (value.location)? value.location.name : null;
-				dados.cargo = value.headline;
-				dados.industria = value.industry;
-				dados.foto = value.pictureUrl;
-				dados.descricao = value.summary;
-				dados.perfil = (new URLParser(value.publicProfileUrl)).link.pathname;
-*/
+		if(data.values && data.values.length > 0){
+			var value = data.values[0];
+
+			var dados = {};
+
+			dados.nome = value.formattedName;
+			dados.email = value.emailAddress;
+			dados.localidade = (value.location)? value.location.name : null;
+			dados.cargo = value.headline;
+			dados.industria = value.industry;
+			dados.foto = value.pictureUrl;
+			dados.descricao = value.summary;
+			dados.perfil = (new URLParser(value.publicProfileUrl)).link.pathname;
+
+			SysMap_Candidato.dados = dados;
+		}
+
+		console.debug({
+			this: SysMap_Candidato,
+			arguments: arguments
+		});
 	}
 
 	function carregar(){
