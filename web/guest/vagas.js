@@ -2,6 +2,7 @@ var SysMap_VAGA_URL_PREFIX = "https://sysmapsolutions.github.io/vagas/{0}.json";
 
 function SysMap_Vaga(codigo) {
 	this.codigo = codigo;
+	this.dados = {};
 
 	function vagaRetornada(dados){
 		this.dados = dados;
@@ -55,17 +56,7 @@ SysMap_Vaga.prototype.render = function() {
 	});
 	*/
 
-	var ga_page = "/vagas";
-	if(codigo){
-		ga_page += "/" + this.codigo;
-	}
-
-	ga("send", {
-		hitType: "pageview",
-		location: location.href,
-		page: ga_page,
-		title: this.dados["Nome"]
-	});
+	SysMap_Analytics_send(this);
 
 	ga("send", {
 		hitType: "event",
@@ -83,7 +74,22 @@ SysMap_Vaga.prototype.render = function() {
 	this.bindList("[class='sysmap-vaga-atributos']", "Atributos Pessoais");
 }
 
+funcion SysMap_Analytics_send(vaga){
+	var page = "/vagas";
+	if(codigo){
+		page += "/" + vaga.codigo;
+	}
+
+	ga("send", {
+		hitType: "pageview",
+		location: location.href,
+		page: page,
+		title: vaga.dados["Nome"]
+	});
+}
+
 {
 	var codigo = window.location.hash.substring(1);
 	var vaga = new SysMap_Vaga(codigo);
+	SysMap_Analytics_send(vaga);
 }
