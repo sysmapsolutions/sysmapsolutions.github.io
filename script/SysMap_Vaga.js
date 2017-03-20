@@ -14,10 +14,6 @@ SysMap_Vaga = function () {
 	}
 
 	function vagaNaoRetornada(){
-		console.debug({
-			this:this,
-			arguments:arguments
-		});
 		SysMap_Analytics.enviarVaga();
 	}
 
