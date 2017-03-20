@@ -1,4 +1,4 @@
-SysMap_Analytics = function () {
+SysMap_Analytics = (function () {
 
 	function enviarVaga(){
 		if(SysMap_Vaga.dados["Nome"]){
@@ -27,4 +27,4 @@ SysMap_Analytics = function () {
 	return {
 		enviarVaga: enviarVaga
 	}
-}();
+})();
