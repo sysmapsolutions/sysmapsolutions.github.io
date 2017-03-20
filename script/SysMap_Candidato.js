@@ -1,6 +1,7 @@
 SysMap_Candidato = (function () {
 	this.email;
 	this.dados = {};
+	this.linkedin = {};
 
 	function candidatoAutorizado(){
 		this.email = undefined;
@@ -40,12 +41,11 @@ SysMap_Candidato = (function () {
 			dados.perfil = (new URLParser(value.publicProfileUrl)).link.pathname;
 
 			SysMap_Candidato.dados = dados;
+			SysMap_Candidato.linkedin = value;
 		}
 
-		console.debug({
-			this: SysMap_Candidato,
-			arguments: arguments
-		});
+		SysMap_Candidato_UI.atualizar();
+		console.debug(SysMap_Candidato);
 	}
 
 	function carregar(){
