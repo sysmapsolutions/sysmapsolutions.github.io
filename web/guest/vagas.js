@@ -136,7 +136,7 @@ function SysMap_LinkedIn_userAuthorized(){
 }
 
 function SysMap_LinkedIn_profileRetrieved(data){
-	console.debug(dados);
+	console.debug(data);
 
 	var dados = {};
 
