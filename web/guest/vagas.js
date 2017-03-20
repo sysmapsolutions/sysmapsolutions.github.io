@@ -145,8 +145,14 @@ function SysMap_LinkedIn_profileRetrieved(data){
 
 		dados.nome = value.formattedName;
 		dados.localidade = (value.location)? value.location.name : null;
+		dados.cargo = value.headline;
+		dados.industria = value.industry;
+		dados.foto = value.pictureUrl;
 		dados.descricao = value.summary;
 		dados.url = value.publicProfileUrl;
+
+		$("#sysmap-candidato-nome").val(dados.nome);
+		$("#sysmap-candidato-email").val(dados.email);
 	}
 	console.debug(dados);
 }
