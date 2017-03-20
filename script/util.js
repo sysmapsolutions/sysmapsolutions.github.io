@@ -33,5 +33,5 @@ var QueryString = function () {
 
 function URLParser(url){
 	this.link = document.createElement("a");
-	this.link.href = href;
+	this.link.href = url;
 }
