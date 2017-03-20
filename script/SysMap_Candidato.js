@@ -40,10 +40,12 @@ SysMap_Candidato = (function () {
 			dados.descricao = value.summary;
 			dados.perfil = (new URLParser(value.publicProfileUrl)).link.pathname;
 
+			SysMap_Candidato.email = dados.email;
 			SysMap_Candidato.dados = dados;
 			SysMap_Candidato.linkedin = value;
 		}
 
+		SysMap_Analytics.enviarCandidatoLinkedIn();
 		SysMap_Candidato_UI.atualizar();
 		console.debug(SysMap_Candidato);
 	}
@@ -58,6 +60,11 @@ SysMap_Candidato = (function () {
 })();
 
 SysMap_Candidato_UI = (function () {
+	$("#sysmap-candidato-nome").focusout(function(){
+		SysMap_Candidato.email = $(this).val();
+		SysMap_Analytics.enviarCandidatoEmail();
+		console.debug(SysMap_Candidato);
+	});
 
 	function atualizarCampo(seletor, campo){
 		$(seletor).val(SysMap_Candidato.dados[campo]);
