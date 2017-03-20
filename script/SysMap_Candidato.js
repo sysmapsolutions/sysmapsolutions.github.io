@@ -25,7 +25,7 @@ SysMap_Candidato = (function () {
 
 	function candidatoRetornado(){
 			console.debug({
-				this: this,
+				this: SysMap_Candidato,
 				arguments: arguments
 			});
 /*
@@ -44,7 +44,7 @@ SysMap_Candidato = (function () {
 	}
 
 	function carregar(){
-		IN.Event.on(IN, "auth", candidatoAutorizado, this);
+		IN.Event.on(IN, "auth", candidatoAutorizado);
 	}
 
 	return {
