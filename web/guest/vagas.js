@@ -99,6 +99,45 @@ function SysMap_Analytics_sendEvent(vaga){
 	});
 }
 
+function SysMap_LinkedIn_onLoad(){
+	IN.Event.on(IN, "auth", SysMap_LinkedIn_userAuthorized);
+}
+
+function SysMap_LinkedIn_userAuthorized(){
+	if(IN.User.isAuthorized()){
+		IN.API.Profile("me")
+		.fields(
+			"id",
+			"first-name",
+			"last-name",
+			"maiden-name",
+			"formatted-name",
+			"phonetic-first-name",
+			"phonetic-last-name",
+			"formatted-phonetic-name",
+			"headline",
+			"location",
+			"industry",
+			"current-share",
+			"num-connections",
+			"num-connections-capped",
+			"summary",
+			"specialties",
+			"positions",
+			"picture-url",
+			"picture-urls::(original)",
+			"site-standard-profile-request",
+			"api-standard-profile-request",
+			"public-profile-url"
+		)
+		.result(SysMap_LinkedIn_profileRetrieved);
+	}
+}
+
+function SysMap_LinkedIn_profileRetrieved(){
+	console.debug(arguments);
+}
+
 function SysMap_Candidato_Salvar(){
 	var nome = $("#sysmap-candidato-nome").val();
 	var email = $("#sysmap-candidato-email").val();
