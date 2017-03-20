@@ -64,13 +64,13 @@ SysMap_Vaga_UI = (function () {
 
 
 	function atualizar(){
-		atualizarCampo("[class='sysmap-vaga-codigo']", "codigo");
-		atualizarCampo("[class='sysmap-vaga-nome']", "nome");
+		atualizarCampo(".sysmap-vaga-codigo", "codigo");
+		atualizarCampo(".sysmap-vaga-nome", "nome");
 
-		atualizarLista("[class='sysmap-vaga-descricao']", "descricao");
-		atualizarLista("[class='sysmap-vaga-responsabilidades']", "responsabilidades");
-		atualizarLista("[class='sysmap-vaga-experiencias']", "experiencias");
-		atualizarLista("[class='sysmap-vaga-atributos']", "atributos");
+		atualizarLista(".sysmap-vaga-descricao", "descricao");
+		atualizarLista(".sysmap-vaga-responsabilidades", "responsabilidades");
+		atualizarLista(".sysmap-vaga-experiencias", "experiencias");
+		atualizarLista(".sysmap-vaga-atributos", "atributos");
 	}
 
 	return {

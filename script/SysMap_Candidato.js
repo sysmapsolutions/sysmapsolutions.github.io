@@ -56,3 +56,19 @@ SysMap_Candidato = (function () {
 		carregar: carregar
 	}
 })();
+
+SysMap_Candidato_UI = (function () {
+
+	function atualizarCampo(seletor, campo){
+		$(seletor).val(SysMap_Candidato.dados[campo]);
+	}
+
+	function atualizar(){
+		atualizarCampo("#sysmap-candidato-nome", "nome");
+		atualizarCampo("#sysmap-candidato-email", "email");
+	}
+
+	return {
+		atualizar: atualizar
+	}
+})();
