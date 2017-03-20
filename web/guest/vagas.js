@@ -78,15 +78,15 @@ function SysMap_Analytics_sendPageview(vaga){
 		document.title = vaga.dados["Nome"];
 	}
 
-	var page = "/vagas";
+	var ga_page = "/vagas";
 	if(vaga.codigo){
-		page += "/" + vaga.codigo;
+		ga_page += "/" + vaga.codigo;
 	}
 
 	ga("send", {
 		hitType: "pageview",
 		location: location.href,
-		page: page,
+		page: ga_page,
 		title: document.title
 	});
 }
