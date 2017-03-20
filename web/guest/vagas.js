@@ -104,11 +104,29 @@ function SysMap_Candidato_Salvar(){
 	var email = $("#sysmap-candidato-email").val();
 	var telefone = $("#sysmap-candidato-telefone").val();
 
-	console.log({
-		nome : nome,
-		email : email,
-		telefone : telefone
-	});
+	var erros = [];
+
+	if(!nome){
+		erros.push("Informe seu nome no formulário abaixo.");
+	}
+
+	if(!email){
+		erros.push("Informe seu e-mail no formulário abaixo.");
+	}
+
+	if(!telefone){
+		erros.push("Informe seu e-mail no formulário abaixo.");
+	}
+
+	if(erros.length > 0){
+		$("#sysmap-candidato-form-erros")
+		.html(erros.join("<br/>"))
+		.show();
+	}else{
+		$("#sysmap-candidato-form-erros")
+		.html("")
+		.hide();
+	}
 }
 
 {
