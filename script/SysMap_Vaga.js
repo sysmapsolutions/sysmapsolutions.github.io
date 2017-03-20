@@ -5,12 +5,9 @@ SysMap_Vaga = (function () {
 	this.dados = {};
 
 	function vagaRetornada(dados){
-		console.debug({
-			this:this,
-			arguments:arguments
-		});
-		this.dados = dados;
 		SysMap_Analytics.enviarVaga();
+		this.dados = dados;
+		SysMap_Vaga_UI.atualizar();
 	}
 
 	function vagaNaoRetornada(){
@@ -29,6 +26,34 @@ SysMap_Vaga = (function () {
 
 	return {
 		carregar: carregar
+	}
+})();
+
+
+SysMap_Vaga_UI = (function () {
+	function atualizarCampo(seletor, campo){
+		$(seletor).html(this.dados[campo]);
+	}
+
+
+	function atualizar(){
+		console.debug({
+			this:this,
+			arguments:arguments
+		});
+
+		atualizarCampo("[class='sysmap-vaga-codigo']", "codigo");
+		atualizarCampo("[class='sysmap-vaga-nome']", "nome");
+/*
+		this.bindList("[class='sysmap-vaga-descricao']", "Descrição");
+		this.bindList("[class='sysmap-vaga-responsabilidades']", "Responsabilidades");
+		this.bindList("[class='sysmap-vaga-experiencias']", "Educação e Experiências");
+		this.bindList("[class='sysmap-vaga-atributos']", "Atributos Pessoais");
+*/
+	}
+
+	return {
+		atualizar: atualizar
 	}
 })();
 

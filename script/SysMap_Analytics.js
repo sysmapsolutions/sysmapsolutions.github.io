@@ -18,10 +18,6 @@ SysMap_Analytics = (function () {
 			page: pagina,
 			title: document.title
 		});
-		console.debug({
-			this:this,
-			arguments:arguments
-		});
 	}
 
 	return {

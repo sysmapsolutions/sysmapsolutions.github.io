@@ -1,11 +1,11 @@
 {
-	"Código": 2865,
-	"Nome": "Consultor Técnico de Pré-Venda",
-	"Descrição": [
+	"codigo": 2865,
+	"nome": "Consultor Técnico de Pré-Venda",
+	"descricao": [
 		"É responsável por conduzir o trabalho de consultoria técnica durante o ciclo de venda em colaboração com as equipes comercial, operação, cliente e parceiros para apresentar a melhor proposta de serviço ou solução para o cliente.",
 		"Ele entende as necessidades dos clientes, concebe uma visão inicial da solução, combina as ofertas de serviços e produtos da SysMap e parceiros e constrói uma proposta de solução para o cliente e direciona a equipe de operação para o sucesso na entrega do projeto."
 	],
-	"Responsabilidades": [
+	"responsabilidades": [
 		"Criar de propostas e materiais de venda",
 		"Conduzir pesquisas de mercado e construir pontos de vista (PoVs) em soluções digitais e tendências de tecnologia",
 		"Conduzir e gerenciar elaboração de propostas",
@@ -19,7 +19,7 @@
 		"Organizar e apresentar eventos educacionais internos, para parceiros e clientes",
 		"Colaborar no desenvolvimento de aceleradores de práticas e soluções digitais"
 	],
-	"Educação e Experiências": [
+	"experiencias": [
 		"Graduação ou pós-graduação na área de tecnologia da informação",
 		"5 anos ou mais de experiência na área de tecnologia da informação, preferencialmente em funções de pré-venda, arquitetura ou consultoria",
 		"1 ano ou mais de experiência em função de pré-venda",
@@ -27,7 +27,7 @@
 		"Diferencial experiência e conhecimento em competências digitais: design, analytics, cloud, mobilidade, IoT, e-commerce, CMS, API, etc",
 		"Diferencial experiência e conhecimento em metodologias lean e agile: Scrum, Kanban, Lean Startup"
 	],
-	"Atributos Pessoais": [
+	"atributos": [
 		"Atitude motivada e com iniciativa para buscar o sucesso das ações de negócio do cliente e da SysMap",
 		"Capacidade de aprender rapidamente novos conhecimentos e tecnologias",
 		"Excelentes habilidades de comunicação e apresentação",
