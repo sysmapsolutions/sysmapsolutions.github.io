@@ -24,7 +24,8 @@ SysMap_Analytics = (function () {
 		ga("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
-			eventAction: "candidato/" + SysMap_Candidato.email + " vê " + "vaga/" + SysMap_Vaga.codigo
+			eventAction: "vê vaga/" + SysMap_Vaga.codigo,
+			eventLabel: "candidato/" + SysMap_Candidato.email
 		});
 	}
 
@@ -32,7 +33,8 @@ SysMap_Analytics = (function () {
 		ga("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
-			eventAction: "candidato/" + SysMap_Candidato.email + " entrou com LinkedIn na " + "vaga/" + SysMap_Vaga.codigo
+			eventAction: "entrou com LinkedIn na vaga/" + SysMap_Vaga.codigo,
+			eventLabel: "candidato/" + SysMap_Candidato.email
 		});
 	}
 
@@ -40,7 +42,8 @@ SysMap_Analytics = (function () {
 		ga("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
-			eventAction: "candidato/" + SysMap_Candidato.email + " preencheu e-mail na " + "vaga/" + SysMap_Vaga.codigo
+			eventAction: "preencheu e-mail na vaga/" + SysMap_Vaga.codigo,
+			eventLabel: "candidato/" + SysMap_Candidato.email
 		});
 	}
 
@@ -48,7 +51,8 @@ SysMap_Analytics = (function () {
 		ga("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
-			eventAction: "candidato/" + SysMap_Candidato.email + " se cadastra na " + "vaga/" + SysMap_Vaga.codigo
+			eventAction: "se cadastra na vaga/" + SysMap_Vaga.codigo,
+			eventLabel: "candidato/" + SysMap_Candidato.email
 		});
 	}
 

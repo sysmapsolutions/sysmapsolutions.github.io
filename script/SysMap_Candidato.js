@@ -65,7 +65,6 @@ SysMap_Candidato_UI = (function () {
 		$("#sysmap-candidato-email").focusout(function(){
 			SysMap_Candidato.email = $(this).val();
 			SysMap_Analytics.enviarCandidatoEmail();
-			console.debug(SysMap_Candidato);
 		});
 	}
 
