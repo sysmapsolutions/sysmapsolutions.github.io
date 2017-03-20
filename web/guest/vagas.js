@@ -115,7 +115,7 @@ function SysMap_Candidato_Salvar(){
 	}
 
 	if(!telefone){
-		erros.push("Informe seu e-mail no formulário abaixo.");
+		erros.push("Informe seu telefone no formulário abaixo.");
 	}
 
 	if(erros.length > 0){
