@@ -74,6 +74,10 @@ SysMap_Vaga.prototype.render = function() {
 }
 
 function SysMap_Analytics_sendPageview(vaga){
+	if(vaga.dados["Nome"]){
+		document.title = vaga.dados["Nome"];
+	}
+
 	var page = "/vagas";
 	if(vaga.codigo){
 		page += "/" + vaga.codigo;
@@ -83,7 +87,7 @@ function SysMap_Analytics_sendPageview(vaga){
 		hitType: "pageview",
 		location: location.href,
 		page: page,
-		title: vaga.dados["Nome"]
+		title: document.title
 	});
 }
 
