@@ -148,6 +148,7 @@ function SysMap_LinkedIn_profileRetrieved(data){
 		dados.descricao = value.summary;
 		dados.url = value.publicProfileUrl;
 	}
+	console.debug(dados);
 }
 
 function SysMap_Candidato_Salvar(){
