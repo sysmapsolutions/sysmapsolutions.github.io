@@ -95,8 +95,7 @@ function SysMap_Analytics_sendEvent(vaga){
 	ga("send", {
 		hitType: "event",
 		eventCategory: "SysMap Vagas",
-		eventAction: "ver",
-		eventLabel: "vaga/" + this.codigo
+		eventAction: "vaga/" + this.codigo
 	});
 }
 
