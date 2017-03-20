@@ -5,8 +5,8 @@ SysMap_Vaga = (function () {
 	this.dados = {};
 
 	function vagaRetornada(dados){
-		SysMap_Analytics.enviarVaga();
 		this.dados = dados;
+		SysMap_Analytics.enviarVaga();
 		SysMap_Vaga_UI.atualizar();
 	}
 
