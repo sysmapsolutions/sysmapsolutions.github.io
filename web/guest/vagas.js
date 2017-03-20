@@ -144,6 +144,7 @@ function SysMap_LinkedIn_profileRetrieved(data){
 		var value = data.values[0];
 
 		dados.nome = value.formattedName;
+		dados.email = value.emailAddress;
 		dados.localidade = (value.location)? value.location.name : null;
 		dados.cargo = value.headline;
 		dados.industria = value.industry;
