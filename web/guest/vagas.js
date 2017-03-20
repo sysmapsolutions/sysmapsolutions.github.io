@@ -99,6 +99,17 @@ function SysMap_Analytics_sendEvent(vaga){
 	});
 }
 
+function SysMap_Candidato_Salvar(){
+	var nome = $("#sysmap-candidato-nome").val();
+	var email = $("#sysmap-candidato-email").val();
+	var telefone = $("#sysmap-candidato-telefone").val();
+
+	console.log({
+		nome : nome,
+		email : email,
+		telefone : telefone
+	});
+}
 
 {
 	var codigo = QueryString.codigo;

@@ -441,7 +441,7 @@
 										<div class="journal-content-article">
 											<h2 class="s-page-title">
 												<p>Estamos à procura de um <span class="sysmap-vaga-nome"></span>.</p>
-												<a class="s-btn border-only" href="javascript:;" onclick="window.location.hash='#candidate-se'">Candidate-se</a> </h2></div>
+												<a class="s-btn border-only" href="javascript:;" onclick="window.location.hash='#';window.location.hash='#candidate-se';">Candidate-se</a> </h2></div>
 										<div class="entry-links"> </div>
 									</div>
 								</div>
@@ -513,14 +513,14 @@
 																		<input class="field" id="sysmap-candidato-nome" name="sysmap-candidato-nome" type="text" value="">
 																	</div>
 																	<div class="control-group input-text-wrapper">
-																		<label class="control-label" for="sysmap-candidato-telefone"> Telefone </label>
-																		<input class="field" id="sysmap-candidato-telefone" name="sysmap-candidato-telefone" type="text" value="">
-																	</div>
-																	<div class="control-group input-text-wrapper">
 																		<label class="control-label" for="sysmap-candidato-email"> E-mail </label>
 																		<input class="field" id="sysmap-candidato-email" name="sysmap-candidato-email" type="text" value="">
 																	</div>
-																	<button class="btn btn-primary" type="button" id="sysmap-candidato-enviar"> Enviar </button>
+																	<div class="control-group input-text-wrapper">
+																		<label class="control-label" for="sysmap-candidato-telefone"> Telefone </label>
+																		<input class="field" id="sysmap-candidato-telefone" name="sysmap-candidato-telefone" type="text" value="">
+																	</div>
+																	<button class="btn btn-primary" type="button" id="sysmap-candidato-enviar" onclick="SysMap_Candidato_Salvar();"> Enviar </button>
 																</form>
 															</div>
 														</div>
