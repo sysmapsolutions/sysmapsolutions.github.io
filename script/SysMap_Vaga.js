@@ -32,7 +32,7 @@ SysMap_Vaga = (function () {
 
 SysMap_Vaga_UI = (function () {
 	function atualizarCampo(seletor, campo){
-		$(seletor).html(this.dados[campo]);
+		$(seletor).html(SysMap_Vaga.dados[campo]);
 	}
 
 
