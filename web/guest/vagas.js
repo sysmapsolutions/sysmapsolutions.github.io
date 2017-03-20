@@ -6,12 +6,12 @@ function SysMap_Vaga(codigo) {
 
 	function vagaRetornada(dados){
 		this.dados = dados;
-		SysMap_Analytics_sendPageview(vaga);
+		SysMap_Analytics_sendPageview(this);
 		this.render();
 	}
 
 	function vagaNaoRetornada(){
-		SysMap_Analytics_sendPageview(vaga);
+		SysMap_Analytics_sendPageview(this);
 		console.debug(arguments);
 	}
 
@@ -98,6 +98,11 @@ function SysMap_Analytics_sendEvent(vaga){
 		eventAction: "vaga/" + this.codigo
 	});
 }
+
+function SysMap_Analytics_setUserId(candidato){
+	ga('set', 'userId', candidato.dados.email);
+}
+
 
 function SysMap_LinkedIn_onLoad(){
 	IN.Event.on(IN, "auth", SysMap_LinkedIn_userAuthorized);
