@@ -75,7 +75,7 @@ SysMap_Vaga.prototype.render = function() {
 
 function SysMap_Analytics_sendPageview(vaga){
 	if(vaga.dados["Nome"]){
-		document.title = vaga.dados["Nome"];
+		document.title = vaga.dados["Nome"] + " - SysMap";
 	}
 
 	var ga_page = "/vagas";
