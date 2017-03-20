@@ -74,7 +74,7 @@ SysMap_Vaga.prototype.render = function() {
 	this.bindList("[class='sysmap-vaga-atributos']", "Atributos Pessoais");
 }
 
-funcion SysMap_Analytics_send(vaga){
+function SysMap_Analytics_send(vaga){
 	var page = "/vagas";
 	if(codigo){
 		page += "/" + vaga.codigo;
