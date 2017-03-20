@@ -89,7 +89,7 @@ function SysMap_Analytics_send(vaga){
 }
 
 {
-	var codigo = window.location.hash.substring(1);
+	var codigo = QueryString.codigo;
 	var vaga = new SysMap_Vaga(codigo);
 	SysMap_Analytics_send(vaga);
 }
