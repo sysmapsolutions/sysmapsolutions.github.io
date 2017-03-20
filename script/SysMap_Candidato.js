@@ -26,7 +26,7 @@ SysMap_Candidato = (function () {
 	function candidatoRetornado(){
 			console.debug({
 				this: this,
-				arguments: argments
+				arguments: arguments
 			});
 /*
 			if(data.values && data.values.length > 0){
