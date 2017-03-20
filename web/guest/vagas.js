@@ -56,14 +56,7 @@ SysMap_Vaga.prototype.render = function() {
 	});
 	*/
 
-	SysMap_Analytics_send(this);
-
-	ga("send", {
-		hitType: "event",
-		eventCategory: "SysMap Vagas",
-		eventAction: "ver",
-		eventLabel: "vaga/" + this.codigo
-	});
+	SysMap_Analytics_sendEvent(this);
 
 	this.bindField("[class='sysmap-vaga-codigo']", "Código");
 	this.bindField("[class='sysmap-vaga-nome']", "Nome");
@@ -74,22 +67,22 @@ SysMap_Vaga.prototype.render = function() {
 	this.bindList("[class='sysmap-vaga-atributos']", "Atributos Pessoais");
 }
 
-function SysMap_Analytics_send(vaga){
-	var page = "/vagas";
-	if(codigo){
-		page += "/" + vaga.codigo;
-	}
+function SysMap_Analytics_sendPageview(vaga){
+	ga("send", "pageview");
+}
 
+function SysMap_Analytics_sendEvent(vaga){
 	ga("send", {
-		hitType: "pageview",
-		location: location.href,
-		page: page,
-		title: vaga.dados["Nome"]
+		hitType: "event",
+		eventCategory: "SysMap Vagas",
+		eventAction: "ver",
+		eventLabel: "vaga/" + this.codigo
 	});
 }
+
 
 {
 	var codigo = QueryString.codigo;
 	var vaga = new SysMap_Vaga(codigo);
-	SysMap_Analytics_send(vaga);
+	SysMap_Analytics_sendPageview(vaga);
 }
