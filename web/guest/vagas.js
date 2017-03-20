@@ -108,26 +108,12 @@ function SysMap_LinkedIn_userAuthorized(){
 		IN.API.Profile("me")
 		.fields(
 			"id",
-			"first-name",
-			"last-name",
-			"maiden-name",
 			"formatted-name",
-			"phonetic-first-name",
-			"phonetic-last-name",
-			"formatted-phonetic-name",
 			"headline",
 			"location",
 			"industry",
-			"current-share",
-			"num-connections",
-			"num-connections-capped",
 			"summary",
-			"specialties",
-			"positions",
 			"picture-url",
-			"picture-urls::(original)",
-			"site-standard-profile-request",
-			"api-standard-profile-request",
 			"public-profile-url",
 			"email-address"
 		)
