@@ -35,21 +35,42 @@ SysMap_Vaga_UI = (function () {
 		$(seletor).html(SysMap_Vaga.dados[campo]);
 	}
 
+	function atualizarLista(seletor, campo){
+		var dados = SysMap_Vaga.dados[campo];
 
-	function atualizar(){
-		console.debug({
-			this:this,
-			arguments:arguments
+		var ultimoIndice = -1;
+		var ultimoElemento;
+		$(seletor).each(function(i){
+			if(i < dados.length){
+				ultimoIndice = i;
+				ultimoElemento = $(this);
+				ultimoElemento.html(dados[ultimoIndice]);
+				ultimoElemento.show(0);
+			}else{
+				$(this).hide(0);
+			}
 		});
 
+		if(ultimoIndice >= 0){
+			while(ultimoIndice < dados.length - 1){
+				ultimoIndice++;
+				var clone = ultimoElemento.clone();
+				clone.html(dados[ultimoIndice]);
+				ultimoElemento.after(clone);
+				ultimoElemento = clone;
+			}
+		}
+	}
+
+
+	function atualizar(){
 		atualizarCampo("[class='sysmap-vaga-codigo']", "codigo");
 		atualizarCampo("[class='sysmap-vaga-nome']", "nome");
-/*
-		this.bindList("[class='sysmap-vaga-descricao']", "Descrição");
-		this.bindList("[class='sysmap-vaga-responsabilidades']", "Responsabilidades");
-		this.bindList("[class='sysmap-vaga-experiencias']", "Educação e Experiências");
-		this.bindList("[class='sysmap-vaga-atributos']", "Atributos Pessoais");
-*/
+
+		atualizarLista("[class='sysmap-vaga-descricao']", "descricao");
+		atualizarLista("[class='sysmap-vaga-responsabilidades']", "responsabilidades");
+		atualizarLista("[class='sysmap-vaga-experiencias']", "experiencias");
+		atualizarLista("[class='sysmap-vaga-atributos']", "atributos");
 	}
 
 	return {
