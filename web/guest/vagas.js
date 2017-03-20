@@ -134,8 +134,8 @@ function SysMap_LinkedIn_userAuthorized(){
 	}
 }
 
-function SysMap_LinkedIn_profileRetrieved(){
-	console.debug(arguments);
+function SysMap_LinkedIn_profileRetrieved(dados){
+	console.debug(dados);
 }
 
 function SysMap_Candidato_Salvar(){
