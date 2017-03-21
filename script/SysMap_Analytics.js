@@ -6,6 +6,10 @@ SysMap_Analytics = (function () {
 
 	function enviar(comando, config){
 		ga(SysMap_Analytics_TRACKER + "." + comando, config);
+		console.debug(
+			comando: comando,
+			config: config
+		);
 	}
 
 	function enviarVaga(){

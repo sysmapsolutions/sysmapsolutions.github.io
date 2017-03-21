@@ -49,7 +49,6 @@ SysMap_Candidato = (function () {
 
 		SysMap_Analytics.enviarCandidatoLinkedIn();
 		SysMap_Candidato_UI.atualizar();
-		console.debug(SysMap_Candidato);
 	}
 
 	function carregar(){
