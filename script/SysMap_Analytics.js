@@ -14,7 +14,7 @@ SysMap_Analytics = (function () {
 
 	function enviarVaga(){
 		if(SysMap_Vaga.dados.nome){
-			document.title = SysMap_Vaga.dados.nome + " - SysMap";
+			document.title = SysMap_Vaga.dados.nome + " (#" + SysMap_Vaga.codigo + ") - SysMap";
 		}else{
 			document.title = "Erro: Vaga Não Encontrada - SysMap";
 		}
