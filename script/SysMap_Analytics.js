@@ -30,20 +30,20 @@ SysMap_Analytics = (function () {
 				"userId": SysMap_Candidato.email
 			});
 
-			texto = SysMap_Analytics.id + "/email/" + SysMap_Candidato.email;
+			texto = SysMap_Analytics_id + "/email/" + SysMap_Candidato.email;
 			enviarEvento(acao, texto);
 		}
 		if(SysMap_Candidato.dados){
 			if(SysMap_Candidato.dados.nome){
-				texto = SysMap_Analytics.id + "/nome/" + SysMap_Candidato.dados.nome;
+				texto = SysMap_Analytics_id + "/nome/" + SysMap_Candidato.dados.nome;
 				enviarEvento(acao, texto);
 			}
 			if(SysMap_Candidato.dados.telefone){
-				texto = SysMap_Analytics.id + "/telefone/" + SysMap_Candidato.dados.telefone;
+				texto = SysMap_Analytics_id + "/telefone/" + SysMap_Candidato.dados.telefone;
 				enviarEvento(acao, texto);
 			}
 			if(SysMap_Candidato.dados.linkedin){
-				texto = SysMap_Analytics.id + "/linkedin" + SysMap_Candidato.dados.linkedin;
+				texto = SysMap_Analytics_id + "/linkedin" + SysMap_Candidato.dados.linkedin;
 				enviarEvento(acao, texto);
 			}
 		}
@@ -103,9 +103,3 @@ SysMap_Analytics = (function () {
 		enviarCandidatoSubmete: enviarCandidatoSubmete
 	}
 })();
-
-ga(function(tracker) {
-	SysMap_Analytics.id = tracker.get('clientId');
-	console.debug(tracker.get('clientId'));
-	console.debug(tracker);
-});
