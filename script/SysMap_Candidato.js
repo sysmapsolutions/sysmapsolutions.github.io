@@ -66,11 +66,47 @@ SysMap_Candidato_UI = (function () {
 	function iniciar(){
 		$("#sysmap-candidato-email").focusout(function(){
 			var email = $(this).val();
-			if(email != SysMap_Candidato.email){
+			if(email && email != SysMap_Candidato.email){
 				SysMap_Candidato.email = email;
 				SysMap_Analytics.enviarCandidatoEmail();
 			}
 		});
+
+		$("#sysmap-candidato-enviar").click(function(){
+			var nome = $("#sysmap-candidato-nome").val();
+			var email = $("#sysmap-candidato-email").val();
+			var telefone = $("#sysmap-candidato-telefone").val();
+
+			var erros = [];
+
+			if(!nome){
+				erros.push("Informe seu nome no formulário abaixo.");
+			}
+
+			if(!email){
+				erros.push("Informe seu e-mail no formulário abaixo.");
+			}
+
+			if(!telefone){
+				erros.push("Informe seu telefone no formulário abaixo.");
+			}
+
+			if(erros.length > 0){
+				$("#sysmap-candidato-form-erros")
+				.html(erros.join("<br/>"))
+				.show();
+			}else{
+				$("#sysmap-candidato-form-erros")
+				.html("")
+				.hide();
+
+				SysMap_Analytics.enviarCandidatoSubmete();
+
+			}
+		});
+
+
+
 	}
 
 	function atualizarCampo(seletor, campo){
