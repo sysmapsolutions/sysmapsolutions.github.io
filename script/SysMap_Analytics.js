@@ -1,6 +1,7 @@
 var SysMap_Analytics_TRACKER = "SysMap_Vagas";
 
 SysMap_Analytics = (function () {
+	this.id = "";
 
 	ga("create", "UA-93986043-1", "auto", SysMap_Analytics_TRACKER);
 
@@ -34,15 +35,15 @@ SysMap_Analytics = (function () {
 		}
 		if(SysMap_Candidato.dados){
 			if(SysMap_Candidato.dados.nome){
-				texto = SysMap_Analytics.id + "/nome/" + SysMap_Candidato.nome;
+				texto = SysMap_Analytics.id + "/nome/" + SysMap_Candidato.dados.nome;
 				enviarEvento(acao, texto);
 			}
 			if(SysMap_Candidato.dados.telefone){
-				texto = SysMap_Analytics.id + "/telefone/" + SysMap_Candidato.telefone;
+				texto = SysMap_Analytics.id + "/telefone/" + SysMap_Candidato.dados.telefone;
 				enviarEvento(acao, texto);
 			}
 			if(SysMap_Candidato.dados.linkedin){
-				texto = SysMap_Analytics.id + "/linkedin" + SysMap_Candidato.linkedin;
+				texto = SysMap_Analytics.id + "/linkedin" + SysMap_Candidato.dados.linkedin;
 				enviarEvento(acao, texto);
 			}
 		}
@@ -58,43 +59,30 @@ SysMap_Analytics = (function () {
 			document.title = "Erro: Vaga Não Encontrada - SysMap";
 		}
 
-		var pagina = "/vagas";
 		if(SysMap_Vaga.codigo){
-			pagina += "/" + SysMap_Vaga.codigo;
+			enviar("set", {
+				"page": "/vagas/" + SysMap_Vaga.codigo;
+			});
+		}else{
+			enviar("set", {
+				"location": location.href
+			});
 		}
 
 		enviar("send", {
 			hitType: "pageview",
-			location: location.href,
-			page: pagina,
 			title: document.title
 		});
 	}
 
 	function enviarCandidatoVeVaga(){
-		enviar("set", {
-			"userId": SysMap_Candidato.email
-		});
-
-		enviar("send", {
-			hitType: "event",
-			eventCategory: "SysMap Vagas",
-			eventAction: "viu vaga/" + SysMap_Vaga.codigo,
-			eventLabel: "candidato/" + SysMap_Candidato.email
-		});
+		var acao = "viu vaga/" + SysMap_Vaga.codigo;
+		enviarEventoDados(acao);
 	}
 
 	function enviarCandidatoLinkedIn(){
-		enviar("set", {
-			"userId": SysMap_Candidato.email
-		});
-
-		enviar("send", {
-			hitType: "event",
-			eventCategory: "SysMap Vagas",
-			eventAction: "entrou com LinkedIn na vaga/" + SysMap_Vaga.codigo,
-			eventLabel: "candidato/" + SysMap_Candidato.email
-		});
+		var acao = "entrou com LinkedIn na vaga/" + SysMap_Vaga.codigo;
+		enviarEventoDados(acao);
 	}
 
 	function enviarCandidatoEmail(){
@@ -103,16 +91,8 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoSubmete(){
-		enviar("set", {
-			"userId": SysMap_Candidato.email
-		});
-
-		enviar("send", {
-			hitType: "event",
-			eventCategory: "SysMap Vagas",
-			eventAction: "se cadastrou na vaga/" + SysMap_Vaga.codigo,
-			eventLabel: "candidato/" + SysMap_Candidato.email
-		});
+		var acao = "se cadastrou na vaga/" + SysMap_Vaga.codigo;
+		enviarEventoDados(acao);
 	}
 
 	return {
