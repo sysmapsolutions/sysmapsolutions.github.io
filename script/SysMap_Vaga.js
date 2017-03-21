@@ -25,6 +25,8 @@ SysMap_Vaga = (function () {
 	}
 
 	return {
+		codigo: codigo,
+		dados: dados,
 		carregar: carregar
 	}
 })();

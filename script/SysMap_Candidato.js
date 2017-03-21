@@ -55,6 +55,9 @@ SysMap_Candidato = (function () {
 	}
 
 	return {
+		email: email,
+		dados: dados,
+		linkedin: linkedin,
 		carregar: carregar
 	}
 })();
