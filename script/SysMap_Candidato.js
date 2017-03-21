@@ -84,7 +84,7 @@ SysMap_Candidato_UI = (function () {
 			erros.push("Informe seu e-mail no formulário abaixo.");
 		}else{
 			if(!$("#sysmap-candidato-email").get(0).validity.valid){
-				erros.push("Informe um e-mail válido: \"x@y.com.br\".");
+				erros.push("Informe um e-mail válido: \"usuario@x.com.br\".");
 			}
 		}
 
