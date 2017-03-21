@@ -1,11 +1,12 @@
 SysMap_Candidato = (function () {
-	this.email;
+	this.email = "";
 	this.dados = {};
 	this.linkedin = {};
 
 	function candidatoAutorizado(){
-		this.email = undefined;
+		this.email = "";
 		this.dados = {};
+		this.linkedin = {};
 
 		if(IN.User.isAuthorized()){
 			IN.API.Profile("me")
@@ -55,9 +56,6 @@ SysMap_Candidato = (function () {
 	}
 
 	return {
-		email: email,
-		dados: dados,
-		linkedin: linkedin,
 		carregar: carregar
 	}
 })();

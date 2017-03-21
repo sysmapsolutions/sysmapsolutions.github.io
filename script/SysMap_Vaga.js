@@ -1,7 +1,7 @@
 var SysMap_Vaga_URL_PREFIX = "https://sysmapsolutions.github.io/vagas/{0}.json";
 
 SysMap_Vaga = (function () {
-	this.codigo;
+	this.codigo = "";
 	this.dados = {};
 
 	function vagaRetornada(dados){
@@ -25,8 +25,6 @@ SysMap_Vaga = (function () {
 	}
 
 	return {
-		codigo: codigo,
-		dados: dados,
 		carregar: carregar
 	}
 })();
