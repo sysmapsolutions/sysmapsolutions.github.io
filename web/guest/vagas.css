@@ -59,6 +59,7 @@
 		line-height: 30px;
 }
 
-.page-internal .linkedin-button{
+.page-internal .linkedin-button,
+.page-internal .form-erros{
 	text-align: center;
 }
