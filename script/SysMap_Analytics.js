@@ -40,7 +40,7 @@ SysMap_Analytics = (function () {
 		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
-			eventAction: "vê vaga/" + SysMap_Vaga.codigo,
+			eventAction: "viu vaga/" + SysMap_Vaga.codigo,
 			eventLabel: "candidato/" + SysMap_Candidato.email
 		});
 	}
@@ -79,7 +79,7 @@ SysMap_Analytics = (function () {
 		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
-			eventAction: "se cadastra na vaga/" + SysMap_Vaga.codigo,
+			eventAction: "se cadastrou na vaga/" + SysMap_Vaga.codigo,
 			eventLabel: "candidato/" + SysMap_Candidato.email
 		});
 	}
