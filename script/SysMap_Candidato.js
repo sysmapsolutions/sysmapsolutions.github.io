@@ -101,11 +101,14 @@ SysMap_Candidato_UI = (function () {
 			.html(erros.join("<br/>"))
 			.show();
 		}else{
+			SysMap_Analytics.enviarCandidatoSubmete();
 			$("#sysmap-candidato-form-erros")
 			.html("")
 			.hide();
-
-			SysMap_Analytics.enviarCandidatoSubmete();
+			$("#sysmap-candidato-form-sucesso")
+			.html("Registramos seu interesse nesta vaga.<br/>Por favor, nos envie seu CV no endereço " +
+			SysMap_Vaga.dados.contato.email + ", informando no assunto \"" + SysMap_Vaga.dados.contato.assunto + "\".")
+			.show();
 		}
 	}
 
