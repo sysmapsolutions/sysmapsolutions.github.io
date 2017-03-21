@@ -48,7 +48,8 @@ SysMap_Analytics = (function () {
 			}
 		}
 		if(!texto){
-			enviarEvento(acao);
+			texto = SysMap_Analytics.id;
+			enviarEvento(acao, texto);
 		}
 	}
 
@@ -73,6 +74,8 @@ SysMap_Analytics = (function () {
 			hitType: "pageview",
 			title: document.title
 		});
+
+		enviarCandidatoVeVaga();
 	}
 
 	function enviarCandidatoVeVaga(){
