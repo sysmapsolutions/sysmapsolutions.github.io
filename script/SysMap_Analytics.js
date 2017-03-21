@@ -39,11 +39,11 @@ SysMap_Analytics = (function () {
 				enviarEvento(acao, texto);
 			}
 			if(SysMap_Candidato.dados.telefone){
-				texto = SysMap_Analytics.id + "/telefone/" + SysMap_Candidato.dados.telefone;
+				texto = SysMap_Analytics.id + "/fone/" + SysMap_Candidato.dados.telefone;
 				enviarEvento(acao, texto);
 			}
 			if(SysMap_Candidato.dados.linkedin){
-				texto = SysMap_Analytics.id + "/linkedin" + SysMap_Candidato.dados.linkedin;
+				texto = SysMap_Analytics.id + SysMap_Candidato.dados.linkedin;
 				enviarEvento(acao, texto);
 			}
 		}
