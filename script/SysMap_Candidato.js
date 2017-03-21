@@ -30,9 +30,10 @@ SysMap_Candidato = (function () {
 		if(data.values && data.values.length > 0){
 			var value = data.values[0];
 
+			SysMap_Candidato.email = value.emailAddress;
+
 			var dados = {};
 
-			dados.email = value.emailAddress;
 			dados.nome = value.formattedName;
 			dados.localidade = (value.location)? value.location.name : null;
 			dados.cargo = value.headline;
@@ -41,7 +42,7 @@ SysMap_Candidato = (function () {
 			dados.descricao = value.summary;
 			dados.perfil = (new URLParser(value.publicProfileUrl)).link.pathname;
 
-			SysMap_Candidato.email = dados.email;
+
 			SysMap_Candidato.dados = dados;
 			SysMap_Candidato.linkedin = value;
 		}
@@ -73,7 +74,11 @@ SysMap_Candidato_UI = (function () {
 	}
 
 	function atualizarCampo(seletor, campo){
-		$(seletor).val(SysMap_Candidato.dados[campo]);
+		if(campo == "email"){
+			$(seletor).val(SysMap_Candidato.email);
+		}else{
+			$(seletor).val(SysMap_Candidato.dados[campo]);
+		}
 	}
 
 	function atualizar(){
