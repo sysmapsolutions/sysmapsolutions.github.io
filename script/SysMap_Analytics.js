@@ -124,5 +124,5 @@ SysMap_Analytics = (function () {
 })();
 
 ga(function(tracker) {
-  var SysMap_Analytics.id = tracker.get('clientId');
+	SysMap_Analytics.id = tracker.get('clientId');
 });
