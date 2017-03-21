@@ -1,4 +1,12 @@
+var SysMap_Analytics_TRACKER = "SysMap_Vagas";
+
 SysMap_Analytics = (function () {
+
+	ga("create", "UA-93986043-1", "auto", SysMap_Analytics_TRACKER);
+
+	function enviar(comando, config){
+		ga(SysMap_Analytics_TRACKER + "." + comando, config);
+	}
 
 	function enviarVaga(){
 		if(SysMap_Vaga.dados.nome){
@@ -12,7 +20,7 @@ SysMap_Analytics = (function () {
 			pagina += "/" + SysMap_Vaga.codigo;
 		}
 
-		ga("send", {
+		enviar("send", {
 			hitType: "pageview",
 			location: location.href,
 			page: pagina,
@@ -21,7 +29,7 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoVeVaga(){
-		ga("send", {
+		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
 			eventAction: "vê vaga/" + SysMap_Vaga.codigo,
@@ -30,7 +38,7 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoLinkedIn(){
-		ga("send", {
+		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
 			eventAction: "entrou com LinkedIn na vaga/" + SysMap_Vaga.codigo,
@@ -39,7 +47,7 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoEmail(){
-		ga("send", {
+		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
 			eventAction: "preencheu e-mail na vaga/" + SysMap_Vaga.codigo,
@@ -48,7 +56,7 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoSubmete(){
-		ga("send", {
+		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
 			eventAction: "se cadastra na vaga/" + SysMap_Vaga.codigo,

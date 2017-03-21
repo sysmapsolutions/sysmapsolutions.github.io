@@ -31,8 +31,8 @@ SysMap_Candidato = (function () {
 
 			var dados = {};
 
-			dados.nome = value.formattedName;
 			dados.email = value.emailAddress;
+			dados.nome = value.formattedName;
 			dados.localidade = (value.location)? value.location.name : null;
 			dados.cargo = value.headline;
 			dados.industria = value.industry;
@@ -63,8 +63,12 @@ SysMap_Candidato_UI = (function () {
 
 	function iniciar(){
 		$("#sysmap-candidato-email").focusout(function(){
-			SysMap_Candidato.email = $(this).val();
-			SysMap_Analytics.enviarCandidatoEmail();
+			var email = $(this).val();
+			if(email != SysMap_Candidato.email){
+				SysMap_Candidato.email = email;
+				SysMap_Candidato.dados.email = email;
+				SysMap_Analytics.enviarCandidatoEmail();
+			}
 		});
 	}
 

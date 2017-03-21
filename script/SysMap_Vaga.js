@@ -1,4 +1,4 @@
-var SysMap_VAGA_URL_PREFIX = "https://sysmapsolutions.github.io/vagas/{0}.json";
+var SysMap_Vaga_URL_PREFIX = "https://sysmapsolutions.github.io/vagas/{0}.json";
 
 SysMap_Vaga = (function () {
 	this.codigo;
@@ -19,7 +19,7 @@ SysMap_Vaga = (function () {
 		this.dados = {};
 
 		$.ajax({
-			url: SysMap_VAGA_URL_PREFIX.format(codigo),
+			url: SysMap_Vaga_URL_PREFIX.format(codigo),
 			context: this
 		}).done(vagaRetornada).fail(vagaNaoRetornada);
 	}
