@@ -29,6 +29,10 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoVeVaga(){
+		enviar("set", {
+			"userId": SysMap_Candidato.email
+		});
+
 		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
@@ -38,6 +42,10 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoLinkedIn(){
+		enviar("set", {
+			"userId": SysMap_Candidato.email
+		});
+
 		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
@@ -47,6 +55,10 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoEmail(){
+		enviar("set", {
+			"userId": SysMap_Candidato.email
+		});
+
 		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
@@ -56,6 +68,10 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoSubmete(){
+		enviar("set", {
+			"userId": SysMap_Candidato.email
+		});
+
 		enviar("send", {
 			hitType: "event",
 			eventCategory: "SysMap Vagas",
