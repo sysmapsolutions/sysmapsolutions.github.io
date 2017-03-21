@@ -7,10 +7,6 @@ SysMap_Analytics = (function () {
 
 	function enviar(comando, config){
 		ga(SysMap_Analytics_TRACKER + "." + comando, config);
-		console.debug({
-			comando: comando,
-			config: config
-		});
 	}
 
 	function enviarEvento(acao, texto){
@@ -109,5 +105,4 @@ SysMap_Analytics = (function () {
 
 ga(function() {
 	SysMap_Analytics.id = ga.getByName(SysMap_Analytics_TRACKER).get("clientId");
-	console.debug(tracker);
 });

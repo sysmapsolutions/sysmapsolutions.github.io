@@ -102,10 +102,7 @@ SysMap_Candidato_UI = (function () {
 	}
 
 	function iniciar(){
-		$("#sysmap-candidato-nome").focusout(submeterCampo);
 		$("#sysmap-candidato-email").focusout(submeterCampo);
-		$("#sysmap-candidato-telefone").focusout(submeterCampo);
-		$("#sysmap-candidato-enviar").click(submeterFormulario);
 	}
 
 	function atualizarCampo(seletor, campo){
