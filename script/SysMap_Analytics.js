@@ -106,4 +106,6 @@ SysMap_Analytics = (function () {
 
 ga(function(tracker) {
 	SysMap_Analytics.id = tracker.get('clientId');
+	console.debug(tracker.get('clientId'));
+	console.debug(tracker);
 });
