@@ -33,6 +33,9 @@
 	<script>
 		var SysMap_Analytics_id = "";
 		ga(function(tracker) {
+			console.debug({
+				arguments: arguments
+			});
 			SysMap_Analytics_id = tracker.get("clientId");
 			console.debug(tracker.get("clientId"));
 			console.debug(tracker);
