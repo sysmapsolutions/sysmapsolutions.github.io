@@ -64,7 +64,10 @@
 	text-align: center;
 }
 
+.page-internal .form-mensagens span{
+	text-align: left;
+}
+
 .page-internal .form-mensagens strong{
 	font-family: dinregular;
-	text-decoration: underline;
 }
