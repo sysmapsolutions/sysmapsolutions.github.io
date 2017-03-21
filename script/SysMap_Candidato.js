@@ -40,7 +40,7 @@ SysMap_Candidato = (function () {
 			dados.industria = value.industry;
 			dados.foto = value.pictureUrl;
 			dados.descricao = value.summary;
-			dados.perfil = (new URLParser(value.publicProfileUrl)).link.pathname;
+			dados.linkedin = (new URLParser(value.publicProfileUrl)).link.pathname;
 
 
 			SysMap_Candidato.dados = dados;

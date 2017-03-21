@@ -12,6 +12,45 @@ SysMap_Analytics = (function () {
 		});
 	}
 
+	function enviarEvento(acao, texto){
+		enviar("send", {
+			hitType: "event",
+			eventCategory: "SysMap Vagas",
+			eventAction: acao,
+			eventLabel: texto
+		});
+	}
+
+	function enviarEventoDados(acao){
+		var texto;
+
+		if(SysMap_Candidato.email){
+			enviar("set", {
+				"userId": SysMap_Candidato.email
+			});
+
+			texto = SysMap_Analytics.id + "/email/" + SysMap_Candidato.email;
+			enviarEvento(acao, texto);
+		}
+		if(SysMap_Candidato.dados){
+			if(SysMap_Candidato.dados.nome){
+				texto = SysMap_Analytics.id + "/nome/" + SysMap_Candidato.nome;
+				enviarEvento(acao, texto);
+			}
+			if(SysMap_Candidato.dados.telefone){
+				texto = SysMap_Analytics.id + "/telefone/" + SysMap_Candidato.telefone;
+				enviarEvento(acao, texto);
+			}
+			if(SysMap_Candidato.dados.linkedin){
+				texto = SysMap_Analytics.id + "/linkedin" + SysMap_Candidato.linkedin;
+				enviarEvento(acao, texto);
+			}
+		}
+		if(!texto){
+			enviarEvento(acao);
+		}
+	}
+
 	function enviarVaga(){
 		if(SysMap_Vaga.dados.nome){
 			document.title = SysMap_Vaga.dados.nome + " (#" + SysMap_Vaga.codigo + ") - SysMap";
@@ -59,16 +98,8 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarCandidatoEmail(){
-		enviar("set", {
-			"userId": SysMap_Candidato.email
-		});
-
-		enviar("send", {
-			hitType: "event",
-			eventCategory: "SysMap Vagas",
-			eventAction: "preencheu e-mail na vaga/" + SysMap_Vaga.codigo,
-			eventLabel: "candidato/" + SysMap_Candidato.email
-		});
+		var acao = "preencheu e-mail na vaga/" + SysMap_Vaga.codigo;
+		enviarEventoDados(acao);
 	}
 
 	function enviarCandidatoSubmete(){
@@ -91,3 +122,7 @@ SysMap_Analytics = (function () {
 		enviarCandidatoSubmete: enviarCandidatoSubmete
 	}
 })();
+
+ga(function(tracker) {
+  var SysMap_Analytics.id = tracker.get('clientId');
+});
