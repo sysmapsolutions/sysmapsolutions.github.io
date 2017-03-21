@@ -61,7 +61,7 @@ SysMap_Analytics = (function () {
 
 		if(SysMap_Vaga.codigo){
 			enviar("set", {
-				"page": "/vagas/" + SysMap_Vaga.codigo;
+				"page": "/vagas/" + SysMap_Vaga.codigo
 			});
 		}else{
 			enviar("set", {
