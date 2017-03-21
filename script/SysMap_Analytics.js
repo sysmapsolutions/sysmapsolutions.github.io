@@ -30,20 +30,20 @@ SysMap_Analytics = (function () {
 				"userId": SysMap_Candidato.email
 			});
 
-			texto = SysMap_Analytics_id + "/email/" + SysMap_Candidato.email;
+			texto = SysMap_Analytics.id + "/email/" + SysMap_Candidato.email;
 			enviarEvento(acao, texto);
 		}
 		if(SysMap_Candidato.dados){
 			if(SysMap_Candidato.dados.nome){
-				texto = SysMap_Analytics_id + "/nome/" + SysMap_Candidato.dados.nome;
+				texto = SysMap_Analytics.id + "/nome/" + SysMap_Candidato.dados.nome;
 				enviarEvento(acao, texto);
 			}
 			if(SysMap_Candidato.dados.telefone){
-				texto = SysMap_Analytics_id + "/telefone/" + SysMap_Candidato.dados.telefone;
+				texto = SysMap_Analytics.id + "/telefone/" + SysMap_Candidato.dados.telefone;
 				enviarEvento(acao, texto);
 			}
 			if(SysMap_Candidato.dados.linkedin){
-				texto = SysMap_Analytics_id + "/linkedin" + SysMap_Candidato.dados.linkedin;
+				texto = SysMap_Analytics.id + "/linkedin" + SysMap_Candidato.dados.linkedin;
 				enviarEvento(acao, texto);
 			}
 		}
@@ -104,9 +104,7 @@ SysMap_Analytics = (function () {
 	}
 })();
 
-var SysMap_Analytics_id = "";
 ga(function() {
-	SysMap_Analytics_id = ga.getByName(SysMap_Analytics_TRACKER).get("clientId");
-	SysMap_Analytics.id = SysMap_Analytics_id;
+	SysMap_Analytics.id = ga.getByName(SysMap_Analytics_TRACKER).get("clientId");
 	console.debug(tracker);
 });
