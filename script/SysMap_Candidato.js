@@ -67,7 +67,6 @@ SysMap_Candidato_UI = (function () {
 			var email = $(this).val();
 			if(email != SysMap_Candidato.email){
 				SysMap_Candidato.email = email;
-				SysMap_Candidato.dados.email = email;
 				SysMap_Analytics.enviarCandidatoEmail();
 			}
 		});
