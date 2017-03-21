@@ -63,3 +63,8 @@
 .page-internal .form-mensagens{
 	text-align: center;
 }
+
+.page-internal .form-mensagens strong{
+	    font-family: dinregular;
+			text-decoration: underline;
+}
