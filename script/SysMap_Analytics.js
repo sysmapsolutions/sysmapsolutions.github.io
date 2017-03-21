@@ -1,7 +1,7 @@
 var SysMap_Analytics_TRACKER = "SysMap_Vagas";
 
 SysMap_Analytics = (function () {
-	this.id = "";
+	var id = "";
 
 	ga("create", "UA-93986043-1", "auto", SysMap_Analytics_TRACKER);
 
@@ -96,6 +96,7 @@ SysMap_Analytics = (function () {
 	}
 
 	return {
+		id : id,
 		enviarVaga: enviarVaga,
 		enviarCandidatoLinkedIn: enviarCandidatoLinkedIn,
 		enviarCandidatoEmail: enviarCandidatoEmail,
