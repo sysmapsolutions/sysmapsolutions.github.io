@@ -112,12 +112,13 @@ SysMap_Candidato_UI = (function () {
 			$("#sysmap-candidato-form").hide();
 		}
 
-		function candidatar(event){
-			event.preventDefault();
+	}
 
-			window.location.hash='#';
-			window.location.hash='#candidate-se';
-		}
+	function candidatar(event){
+		event.preventDefault();
+
+		window.location.hash='#';
+		window.location.hash='#candidate-se';
 	}
 
 	function iniciar(){
