@@ -122,7 +122,7 @@ SysMap_Candidato_UI = (function () {
 	}
 
 	function iniciar(){
-		$("#sysmap-candidato-link").attr("href", window.location.split("#")[0] + "#candidate-se");
+		$("#sysmap-candidato-link").attr("href", window.location.href.split("#")[0] + "#candidate-se");
 		$("#sysmap-candidato-link").click(candidatar);
 		$("#sysmap-candidato-email").focusout(submeterCampo);
 		$("#sysmap-candidato-enviar").click(submeterFormulario);
