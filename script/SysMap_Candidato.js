@@ -113,8 +113,8 @@ SysMap_Candidato_UI = (function () {
 		}
 
 		function candidatar(){
-			window.location.hash='#';
-			window.location.hash='#candidate-se';
+//			window.location.hash='#';
+//			window.location.hash='#candidate-se';
 		}
 	}
 
