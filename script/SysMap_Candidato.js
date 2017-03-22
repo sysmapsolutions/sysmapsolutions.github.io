@@ -112,14 +112,16 @@ SysMap_Candidato_UI = (function () {
 			$("#sysmap-candidato-form").hide();
 		}
 
-		function candidatar(){
-//			window.location.hash='#';
-//			window.location.hash='#candidate-se';
+		function candidatar(event){
+			event.preventDefault();
+
+			window.location.hash='#';
+			window.location.hash='#candidate-se';
 		}
 	}
 
 	function iniciar(){
-		$("#sysmap-candidato-link").attr("href", "#candidate-se");
+		$("#sysmap-candidato-link").attr("href", window.location.split("#")[0] + "#candidate-se");
 		$("#sysmap-candidato-link").click(candidatar);
 		$("#sysmap-candidato-email").focusout(submeterCampo);
 		$("#sysmap-candidato-enviar").click(submeterFormulario);
