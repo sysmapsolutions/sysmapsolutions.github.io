@@ -71,6 +71,7 @@ SysMap_Vaga_UI = (function () {
 		atualizarLista(".sysmap-vaga-responsabilidades", "responsabilidades");
 		atualizarLista(".sysmap-vaga-experiencias", "experiencias");
 		atualizarLista(".sysmap-vaga-atributos", "atributos");
+		atualizarLista(".sysmap-vaga-outros", "outros");
 	}
 
 	return {
