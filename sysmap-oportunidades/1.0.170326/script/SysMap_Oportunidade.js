@@ -1,5 +1,5 @@
-var SysMap_SCRIPT_URL = "https://sysmapsolutions.github.io/script/";
-var SysMap_TEMPLATE_URL = "https://sysmapsolutions.github.io/template/";
+var SysMap_SCRIPT_URL = "https://sysmapsolutions.github.io/sysmap-oportunidades/1.0.170326/script/";
+var SysMap_TEMPLATE_URL = "https://sysmapsolutions.github.io/sysmap-oportunidades/1.0.170326/template/";
 
 function SysMap_Template(nome){
 	return SysMap_TEMPLATE_URL + nome + ".mst";
