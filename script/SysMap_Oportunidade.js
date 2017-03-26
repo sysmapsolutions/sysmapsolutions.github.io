@@ -1,6 +1,13 @@
+var SysMap_SCRIPT_URL = "https://sysmapsolutions.github.io/script/";
+var SysMap_TEMPLATE_URL = "https://sysmapsolutions.github.io/template/";
+
+function SysMap_Template(nome){
+	return SysMap_TEMPLATE_URL + nome + ".mst";
+}
+
 document.write("<div id='sm-conteudo' class='page-container page-internal oportunidades'/> ");
 
-$.get("template.mst", function(template) {
+$.get(SysMap_Template("SysMap_Oportunidade"), function(template) {
 	var vaga = {
 		dados: {
 			codigo: "1000",
