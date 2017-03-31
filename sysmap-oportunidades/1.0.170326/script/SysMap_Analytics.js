@@ -20,6 +20,7 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarErro(erro){
+		console.error(erro);
 		enviar("send", {
 			hitType: "exception",
 			exDescription: erro
