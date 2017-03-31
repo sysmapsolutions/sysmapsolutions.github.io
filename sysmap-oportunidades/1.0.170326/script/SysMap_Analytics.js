@@ -22,31 +22,33 @@ SysMap_Analytics = (function () {
 	function enviarEventoDados(acao){
 		var texto;
 
-		if(SysMap_Candidato.email){
-			enviar("set", {
-				"userId": SysMap_Candidato.email
-			});
+		if(SysMap_Candidato){
+			if(SysMap_Candidato.email){
+				enviar("set", {
+					"userId": SysMap_Candidato.email
+				});
 
-			texto = SysMap_Analytics.id + "/email/" + SysMap_Candidato.email;
-			enviarEvento(acao, texto);
-		}
-		if(SysMap_Candidato.dados){
-			if(SysMap_Candidato.dados.nome){
-				texto = SysMap_Analytics.id + "/nome/" + SysMap_Candidato.dados.nome;
+				texto = SysMap_Analytics.id + "/email/" + SysMap_Candidato.email;
 				enviarEvento(acao, texto);
 			}
-			if(SysMap_Candidato.dados.telefone){
-				texto = SysMap_Analytics.id + "/fone/" + SysMap_Candidato.dados.telefone;
+			if(SysMap_Candidato.dados){
+				if(SysMap_Candidato.dados.nome){
+					texto = SysMap_Analytics.id + "/nome/" + SysMap_Candidato.dados.nome;
+					enviarEvento(acao, texto);
+				}
+				if(SysMap_Candidato.dados.telefone){
+					texto = SysMap_Analytics.id + "/fone/" + SysMap_Candidato.dados.telefone;
+					enviarEvento(acao, texto);
+				}
+				if(SysMap_Candidato.dados.linkedin){
+					texto = SysMap_Analytics.id + SysMap_Candidato.dados.linkedin;
+					enviarEvento(acao, texto);
+				}
+			}
+			if(!texto){
+				texto = SysMap_Analytics.id;
 				enviarEvento(acao, texto);
 			}
-			if(SysMap_Candidato.dados.linkedin){
-				texto = SysMap_Analytics.id + SysMap_Candidato.dados.linkedin;
-				enviarEvento(acao, texto);
-			}
-		}
-		if(!texto){
-			texto = SysMap_Analytics.id;
-			enviarEvento(acao, texto);
 		}
 	}
 

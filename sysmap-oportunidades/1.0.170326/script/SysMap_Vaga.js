@@ -63,11 +63,13 @@ SysMap_Vaga_UI = (function () {
 		}
 	}
 
+	function SysMap_Template(nome){
+		return SysMap_Vaga_URL.format(nome);
+	}
+
+
 
 	function atualizar(){
-		function SysMap_Template(nome){
-			return SysMap_Vaga_URL.format(nome);
-		}
 
 		$.get(SysMap_Template("SysMap_Oportunidade"), function(template) {
 			var resultado = Mustache.render(template, SysMap_Vaga);
