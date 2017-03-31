@@ -19,10 +19,17 @@ SysMap_Analytics = (function () {
 		});
 	}
 
+	function enviarErro(erro){
+		enviar("send", {
+			hitType: "exception",
+			exDescription: erro
+		});
+	}
+
 	function enviarEventoDados(acao){
 		var texto;
 
-		if(SysMap_Candidato){
+		try{
 			if(SysMap_Candidato.email){
 				enviar("set", {
 					"userId": SysMap_Candidato.email
@@ -49,6 +56,8 @@ SysMap_Analytics = (function () {
 				texto = SysMap_Analytics.id;
 				enviarEvento(acao, texto);
 			}
+		}catch(err){
+
 		}
 	}
 
