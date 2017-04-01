@@ -36,25 +36,6 @@
 		padding-top: 0;
 	}
 }
-
-.page-internal h4 {
-	margin-bottom: 10px;
-}
-
-.page-internal li {
-    font-size: 16px;
-    font-family: din_lightregular;
-}
-
-.formArea {
-    border-width: 0;
-    border-style: solid;
-    border-color: #e4e4e4;
-    width: 90%;
-    max-width: 980px;
-    margin: 0 auto 30px;
-}
-
 .page-container .row {
     margin-bottom: 15px;
 }
@@ -84,9 +65,32 @@
 	}
 }
 
+
+.page-internal p {
+    font-size: 18px;
+    font-family: dinregular;
+}
+
 .page-internal ul {
 	list-style-type: square;
 }
+
+
+.page-internal li {
+    font-size: 17px;
+    font-family: dinregular;
+}
+
+.formArea {
+    border-width: 0;
+    border-style: solid;
+    border-color: #e4e4e4;
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto 30px;
+}
+
+
 
 .page-internal .linkedin-button,
 .page-internal .form-mensagens{
