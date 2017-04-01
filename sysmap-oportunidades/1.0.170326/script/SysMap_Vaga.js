@@ -43,7 +43,7 @@ SysMap_Vaga_UI = (function () {
 
 		if(SysMap_Vaga.dados.nome){
 			var chamada = $("<p>",{
-				text: "Estamos à procura de um <strong>{0}</strong>.".format(SysMap_Vaga.dados.nome)
+				html: "Estamos à procura de um <strong>{0}</strong>.".format(SysMap_Vaga.dados.nome)
 			});
 
 			$(".s-page-title").html(chamada);
