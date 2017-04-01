@@ -69,6 +69,7 @@
 
 .page-internal p {
     font-size: 18px;
+		font-family: din_lightregular;
 }
 
 .page-internal ul {
@@ -78,7 +79,7 @@
 
 .page-internal li {
     font-size: 17px;
-    font-family: dinregular;
+    font-family: din_lightregular;
 }
 
 .formArea {
