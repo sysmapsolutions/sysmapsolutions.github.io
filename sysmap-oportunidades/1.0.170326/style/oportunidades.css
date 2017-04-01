@@ -67,19 +67,15 @@
 }
 
 
-.page-internal p {
+.page-internal p,
+.page-internal li {
     font-size: 18px;
 		font-family: din_lightregular;
+    line-height: 30px;
 }
 
 .page-internal ul {
 	list-style-type: square;
-}
-
-
-.page-internal li {
-    font-size: 18px;
-    font-family: din_lightregular;
 }
 
 .formArea {
