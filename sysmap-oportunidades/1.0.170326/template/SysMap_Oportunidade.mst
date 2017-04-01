@@ -11,7 +11,7 @@
 {{/dados.nome}}
 
 {{^dados.nome}}
-<h3>Erro: Vaga Não Encontrada!</h3>
+<h3>Vaga Não Encontrada!</h3>
 <p>Este endereço não corresponde à uma oportunidade vigente na SysMap.</p>
 <p>Para ver outras oportunidades e se candidatar, <a href="/web/guest/trabalhe-conosco">acesse aqui</a>.</p>
 <br/>
