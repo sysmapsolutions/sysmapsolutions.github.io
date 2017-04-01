@@ -35,7 +35,7 @@ SysMap_Vaga = (function () {
 SysMap_Vaga_UI = (function () {
 	function atualizarVaga(template){
 		var resultado = Mustache.render(template, SysMap_Vaga);
-		$('#sm-conteudo').html(resultado);
+		$('#sm-conteudo').append(resultado);
 	}
 
 	function atualizar(){
