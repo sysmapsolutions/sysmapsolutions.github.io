@@ -39,6 +39,7 @@ SysMap_Vaga_UI = (function () {
 	}
 
 	function atualizar(){
+		$('#sm-conteudo').append("<h1>Teste</h1>");
 		SysMap_Template("SysMap_Oportunidade", atualizarVaga);
 	}
 
