@@ -102,6 +102,36 @@
 	line-height: 20px;
 }
 
+.sm-candidato-form input{
+	display: block;
+	background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+}
+
+.sm-candidato-form input:focus{
+  outline: 0;
+  border-color: #1ab188;
+}
+
+.sm-candidato-form button{
+	border: 0;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	background: #1ab188;
+	color: #ffffff;
+	display: block;
+  width: 100%;
+}
+
+.sm-candidato-form button:hover,
+.sm-candidato-form button:focus {
+  background: #179b77;
+}
+
+
 .formArea {
     border-width: 0;
     border-style: solid;

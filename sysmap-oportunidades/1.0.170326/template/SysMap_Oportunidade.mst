@@ -51,7 +51,7 @@
 			<label for="sm-candidato-telefone">Telefone</label>
 			<input id="sm-candidato-telefone" type="text" required pattern="[0-9\-\(\)\s]+"/>
 		</div>
-		<button class="btn btn-primary" type="button" id="sm-candidato-enviar">Enviar</button>
+		<button id="sm-candidato-enviar" type="button">Enviar</button>
 	</form>
 </div>
 <br/>
