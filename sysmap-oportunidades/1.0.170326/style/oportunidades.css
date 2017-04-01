@@ -27,6 +27,11 @@
 	font-weight: bold;
 }
 
+.page-internal {
+    margin-top: 20px;
+    padding: 0;
+}
+
 .page-internal h4 {
 	margin-bottom: 10px;
 }
