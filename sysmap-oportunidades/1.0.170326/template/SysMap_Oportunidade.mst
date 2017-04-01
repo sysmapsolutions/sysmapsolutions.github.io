@@ -41,15 +41,15 @@
 	<form>
 		<div>
 			<label for="sm-candidato-nome">Nome</label>
-			<input id="sm-candidato-nome" type="text" required/>
+			<input id="sm-candidato-nome" type="text" placeholder="Nome" required/>
 		</div>
 		<div>
 			<label for="sm-candidato-email">E-mail</label>
-			<input id="sm-candidato-email" type="email" required/>
+			<input id="sm-candidato-email" type="email" placeholder="u@x.com.br" required/>
 		</div>
 		<div>
 			<label for="sm-candidato-telefone">Telefone</label>
-			<input id="sm-candidato-telefone" type="text" required pattern="[0-9\-\(\)\s]+"/>
+			<input id="sm-candidato-telefone" type="text" placeholder="11 999999999" pattern="[0-9\-\(\)\s]+" required/>
 		</div>
 		<button id="sm-candidato-enviar" type="button">Enviar</button>
 	</form>
