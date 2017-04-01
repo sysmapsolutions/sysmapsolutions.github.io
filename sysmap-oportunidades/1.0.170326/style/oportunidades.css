@@ -97,8 +97,8 @@
 }
 
 .sm-candidato-form p{
-	font-size: 15px;
 	font-family: din_lightregular;
+	font-size: 15px;
 	line-height: 20px;
 }
 
@@ -107,6 +107,7 @@
   width: 100%;
   height: 100%;
   padding: 5px 10px;
+	font-family: din_lightregular;
 }
 
 .sm-candidato-form input:focus{
@@ -122,6 +123,9 @@
 	color: #ffffff;
 	display: block;
   width: 100%;
+	font-family: dinregular;
+	font-size: 15px;
+	line-height: 20px;
 }
 
 .sm-candidato-form button:hover,
