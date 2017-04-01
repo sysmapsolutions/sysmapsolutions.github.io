@@ -31,6 +31,29 @@
 	<p>{{.}}</p>
 {{/dados.outros}}
 
+
+<div class="sm-candidato-form">
+	<h4>Candidate-se</h4>
+	<p>Preencha o formulário abaixo com seus dados de contato ou utilize sua conta no LinkedIn.</p>
+	<div class="linkedin">
+		<script type="in/Login"></script>
+	</div>
+	<form>
+		<div>
+			<label for="sm-candidato-nome">Nome</label>
+			<input id="sm-candidato-nome" type="text" placeholder="Nome" required/>
+		</div>
+		<div>
+			<label for="sm-candidato-email">E-mail</label>
+			<input id="sm-candidato-email" type="email" placeholder="usuario@dominio.com.br" required/>
+		</div>
+		<div>
+			<label for="sm-candidato-telefone">Telefone</label>
+			<input id="sm-candidato-telefone" type="text" placeholder="11 999999999" pattern="[0-9\-\(\)\s]+" required/>
+		</div>
+		<button id="sm-candidato-enviar" type="button">Enviar</button>
+	</form>
+</div>
 <br/>
 <br/>
 <br/>
