@@ -1,5 +1,10 @@
 {{#dados.nome}}
 <h3>{{ dados.nome }} (#{{ dados.codigo }})</h3>
+
+{{#dados.descricao}}
+<p>{{.}}</p>
+{{/dados.descricao}}
+
 <br/>
 <br/>
 <br/>
