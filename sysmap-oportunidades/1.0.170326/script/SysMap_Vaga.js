@@ -13,6 +13,7 @@ SysMap_Vaga = (function () {
 
 	function vagaNaoRetornada(){
 		SysMap_Analytics.enviarVaga();
+		SysMap_Vaga_UI.atualizar();
 	}
 
 	function carregar(codigo){
