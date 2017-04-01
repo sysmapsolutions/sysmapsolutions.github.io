@@ -5,6 +5,13 @@
 <p>{{.}}</p>
 {{/dados.descricao}}
 
+<h4>Responsabilidades</h4>
+<ul>
+{{#dados.responsabilidades}}
+	<li>{{.}}</li>
+{{/dados.responsabilidades}}
+</ul>
+
 <br/>
 <br/>
 <br/>
