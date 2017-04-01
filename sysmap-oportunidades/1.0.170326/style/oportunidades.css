@@ -64,10 +64,19 @@
 		line-height: 40px;
 }
 
+@media (max-width: 700px){
+	.page-internal h3 {
+		font-size: 22px;
+    line-height: 26px;
+	}
+}
+
 .page-internal h4 {
     font-size: 20px;
 		line-height: 30px;
 }
+
+
 
 .page-internal .linkedin-button,
 .page-internal .form-mensagens{
