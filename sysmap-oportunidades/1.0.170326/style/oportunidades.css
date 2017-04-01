@@ -1,0 +1,73 @@
+.s-page-title .s-btn {
+	width: 160px;
+	background: #00a1f1;
+	color: #dedede;
+	padding: 10px;
+	border: 0;
+	font-family: dinregular;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.s-page-title .s-btn:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.s-page-title .sysmap-vaga-nome{
+	font-family: dinregular;
+	font-weight: bold;
+}
+
+.page-internal h4 {
+	margin-bottom: 10px;
+}
+
+.page-internal li {
+    font-size: 16px;
+    font-family: din_lightregular;
+}
+
+.formArea {
+    border-width: 0;
+    border-style: solid;
+    border-color: #e4e4e4;
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto 30px;
+}
+
+.page-container .row {
+    margin-bottom: 15px;
+}
+
+.page-internal h3 {
+    font-size: 30px;
+		line-height: 40px;
+}
+
+.page-internal h4 {
+    font-size: 20px;
+		line-height: 30px;
+}
+
+.page-internal .linkedin-button,
+.page-internal .form-mensagens{
+	text-align: center;
+}
+
+.page-internal .form-mensagens span{
+	text-align: left;
+}
+
+.page-internal .form-mensagens strong{
+	font-family: dinregular;
+}
