@@ -42,11 +42,19 @@ SysMap_Vaga_UI = (function () {
 		SysMap_Template("SysMap_Oportunidade", atualizarVaga);
 
 		if(SysMap_Vaga.dados.nome){
-			var chamada = $("<p>",{
-				html: "Estamos à procura de um <strong>{0}</strong>.".format(SysMap_Vaga.dados.nome)
-			});
+			var titulo = $(".s-page-title");
 
-			$(".s-page-title").html(chamada);
+			titulo.remove("p");
+
+			$("<p>",{
+				html: "Estamos à procura de um <strong>{0}</strong>.".format(SysMap_Vaga.dados.nome)
+			}).appendTo(titulo);
+
+			$("<a>",{
+				class: "s-btn border-only",
+				href: window.location.href.split("#")[0] + "#candidate-se",
+				text: "Candidate-se"
+			}).appendTo(titulo);
 
 		}
 	}
