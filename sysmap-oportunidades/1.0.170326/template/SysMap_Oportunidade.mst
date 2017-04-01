@@ -31,14 +31,6 @@
 	<p>{{.}}</p>
 {{/dados.outros}}
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 {{/dados.nome}}
 
 {{^dados.nome}}
