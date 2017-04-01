@@ -42,10 +42,10 @@ SysMap_Vaga_UI = (function () {
 		SysMap_Template("SysMap_Oportunidade", atualizarVaga);
 
 		if(SysMap_Vaga.dados.nome){
+
+			$(".s-page-title p").remove();
+
 			var titulo = $(".s-page-title");
-
-			titulo.remove("p");
-
 			$("<p>",{
 				html: "Estamos à procura de um <strong>{0}</strong>.".format(SysMap_Vaga.dados.nome)
 			}).appendTo(titulo);
