@@ -38,6 +38,14 @@ SysMap_Vaga_UI = (function () {
 		$('#sm-conteudo').append(resultado);
 	}
 
+	function candidatar(event){
+		event.preventDefault();
+
+		window.location.hash='#';
+		window.location.hash='#candidate-se';
+	}
+
+
 	function atualizar(){
 		SysMap_Template("SysMap_Oportunidade", atualizarVaga);
 
@@ -53,7 +61,8 @@ SysMap_Vaga_UI = (function () {
 			$("<a>",{
 				class: "s-btn border-only",
 				href: window.location.href.split("#")[0] + "#candidate-se",
-				text: "Candidate-se"
+				text: "Candidate-se",
+				click: candidatar
 			}).appendTo(titulo);
 
 		}
