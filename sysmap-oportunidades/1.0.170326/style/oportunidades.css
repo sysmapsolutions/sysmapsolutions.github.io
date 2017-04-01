@@ -31,7 +31,7 @@
     padding-top: 30px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1250px){
 	.page-internal {
 		padding-top: 0;
 	}
