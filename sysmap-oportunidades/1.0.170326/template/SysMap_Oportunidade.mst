@@ -45,7 +45,7 @@
 		</div>
 		<div>
 			<label for="sm-candidato-email">E-mail</label>
-			<input id="sm-candidato-email" type="email" placeholder="u@x.com.br" required/>
+			<input id="sm-candidato-email" type="email" placeholder="usuario@dominio.com.br" required/>
 		</div>
 		<div>
 			<label for="sm-candidato-telefone">Telefone</label>
