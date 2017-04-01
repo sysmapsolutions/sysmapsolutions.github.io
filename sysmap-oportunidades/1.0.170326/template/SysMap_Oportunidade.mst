@@ -12,6 +12,26 @@
 {{/dados.responsabilidades}}
 </ul>
 
+<h4>Educação e Experiências</h4>
+<ul>
+{{#dados.experiencias}}
+	<li>{{.}}</li>
+{{/dados.experiencias}}
+</ul>
+
+<h4>Atributos Pessoais</h4>
+<ul>
+{{#dados.atributos}}
+	<li>{{.}}</li>
+{{/dados.atributos}}
+</ul>
+
+<h4>Outras Informações</h4>
+{{#dados.outros}}
+	<p>{{.}}</p>
+{{/dados.outros}}
+
+
 <br/>
 <br/>
 <br/>
