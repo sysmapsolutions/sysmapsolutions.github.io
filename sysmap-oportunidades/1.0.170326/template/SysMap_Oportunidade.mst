@@ -1,1 +1,1 @@
-{{ dados.nome }} (#{{ dados.codigo }})
+<h3>{{ dados.nome }} (#{{ dados.codigo }})</h3>
