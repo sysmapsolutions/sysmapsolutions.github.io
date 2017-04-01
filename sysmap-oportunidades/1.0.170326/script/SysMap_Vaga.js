@@ -39,8 +39,16 @@ SysMap_Vaga_UI = (function () {
 	}
 
 	function atualizar(){
-		$('#sm-conteudo').append("<h1>Teste</h1>");
 		SysMap_Template("SysMap_Oportunidade", atualizarVaga);
+
+		if(SysMap_Vaga.dados.nome){
+			var chamada = $("<p>",{
+				text: "Estamos à procura de um <strong>{0}</strong>.".format(SysMap_Vaga.dados.nome);
+			});
+
+			$(".s-page-title").html(chamada);
+
+		}
 	}
 
 	return {
