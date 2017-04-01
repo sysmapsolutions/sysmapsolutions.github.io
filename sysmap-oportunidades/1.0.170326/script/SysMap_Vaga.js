@@ -64,7 +64,7 @@ SysMap_Vaga_UI = (function () {
 	}
 
 	function SysMap_Template(nome){
-		return SysMap_Vaga_URL.format(nome);
+		return SysMap_TEMPLATE_URL.format(nome);
 	}
 
 

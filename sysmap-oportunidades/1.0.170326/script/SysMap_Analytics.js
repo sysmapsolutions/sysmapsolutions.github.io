@@ -57,8 +57,8 @@ SysMap_Analytics = (function () {
 				texto = SysMap_Analytics.id;
 				enviarEvento(acao, texto);
 			}
-		}catch(err){
-
+		}catch(erro){
+			enviarErro(erro);
 		}
 	}
 
