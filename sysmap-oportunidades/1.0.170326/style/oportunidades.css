@@ -84,14 +84,23 @@
 
 .sm-candidato-form {
   background: #00a1f1;
-  padding: 40px;
-  max-width: 600px;
+  padding: 20px;
+  max-width: 300px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 	color: #fff;
 }
 
+.sm-candidato-form h4{
+	margin-top: 0;
+}
+
+.sm-candidato-form p{
+	font-size: 15px;
+	font-family: din_lightregular;
+	line-height: 20px;
+}
 
 .formArea {
     border-width: 0;
