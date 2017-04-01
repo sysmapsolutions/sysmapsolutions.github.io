@@ -59,10 +59,6 @@
     margin-bottom: 15px;
 }
 
-.page-internal ul {
-	list-style-type: square;
-}
-
 .page-internal h3 {
     font-size: 30px;
 		line-height: 40px;
@@ -88,6 +84,9 @@
 	}
 }
 
+.page-internal ul {
+	list-style-type: square;
+}
 
 .page-internal .linkedin-button,
 .page-internal .form-mensagens{
