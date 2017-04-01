@@ -33,60 +33,13 @@ SysMap_Vaga = (function () {
 
 
 SysMap_Vaga_UI = (function () {
-	function atualizarCampo(seletor, campo){
-		$(seletor).html(SysMap_Vaga.dados[campo]);
+	function atualizarVaga(template){
+		var resultado = Mustache.render(template, SysMap_Vaga);
+		$('#sm-conteudo').html(resultado);
 	}
-
-	function atualizarLista(seletor, campo){
-		var dados = SysMap_Vaga.dados[campo];
-
-		var ultimoIndice = -1;
-		var ultimoElemento;
-		$(seletor).each(function(i){
-			if(i < dados.length){
-				ultimoIndice = i;
-				ultimoElemento = $(this);
-				ultimoElemento.html(dados[ultimoIndice]);
-				ultimoElemento.show(0);
-			}else{
-				$(this).hide(0);
-			}
-		});
-
-		if(ultimoIndice >= 0){
-			while(ultimoIndice < dados.length - 1){
-				ultimoIndice++;
-				var clone = ultimoElemento.clone();
-				clone.html(dados[ultimoIndice]);
-				ultimoElemento.after(clone);
-				ultimoElemento = clone;
-			}
-		}
-	}
-
-	function SysMap_Template(nome){
-		return SysMap_TEMPLATE_URL.format(nome);
-	}
-
-
 
 	function atualizar(){
-
-		$.get(SysMap_Template("SysMap_Oportunidade"), function(template) {
-			var resultado = Mustache.render(template, SysMap_Vaga);
-			$('#sm-conteudo').html(resultado);
-		});
-
-/*
-		atualizarCampo(".sysmap-vaga-codigo", "codigo");
-		atualizarCampo(".sysmap-vaga-nome", "nome");
-
-		atualizarLista(".sysmap-vaga-descricao", "descricao");
-		atualizarLista(".sysmap-vaga-responsabilidades", "responsabilidades");
-		atualizarLista(".sysmap-vaga-experiencias", "experiencias");
-		atualizarLista(".sysmap-vaga-atributos", "atributos");
-		atualizarLista(".sysmap-vaga-outros", "outros");
-*/
+		SysMap_Template("SysMap_Oportunidade", atualizarVaga);
 	}
 
 	return {

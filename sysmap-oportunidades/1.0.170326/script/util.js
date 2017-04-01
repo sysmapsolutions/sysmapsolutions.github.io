@@ -30,3 +30,9 @@ function URLParser(url){
 	this.link = document.createElement("a");
 	this.link.href = url;
 }
+
+function SysMap_Template(nome, funcao){
+	$.get(SysMap_TEMPLATE_URL.format(nome), funcao);
+}
+
+
