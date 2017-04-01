@@ -32,6 +32,21 @@
 {{/dados.outros}}
 
 
+<form>
+	<div>
+		<label for="sm-candidato-nome">Nome</label>
+		<input id="sm-candidato-nome" type="text" required/>
+	</div>
+	<div>
+		<label for="sm-candidato-email">Nome</label>
+		<input id="sm-candidato-email" type="email" required/>
+	</div>
+	<div>
+		<label for="sm-candidato-telefone">Nome</label>
+		<input id="sm-candidato-telefone" type="text" required pattern="[0-9\-\(\)\s]+"/>
+	</div>
+	<button class="btn btn-primary" type="button" id="sm-candidato-enviar">Enviar</button>
+</form>
 <br/>
 <br/>
 <br/>
