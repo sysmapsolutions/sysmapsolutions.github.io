@@ -47,22 +47,22 @@
 
 @media (max-width: 700px){
 	.page-internal h3 {
-		font-size: 22px;
-    line-height: 26px;
+		font-size: 24px;
+    line-height: 32px;
 	}
 }
 
 .page-internal h4 {
-    font-size: 24px;
-		line-height: 32px;
+    font-size: 27px;
+		line-height: 36px;
 		margin-top: 20px;
 }
 
 
 @media (max-width: 700px){
 	.page-internal h4 {
-		font-size: 18px;
-    line-height: 24px;
+		font-size: 21px;
+    line-height: 28px;
 	}
 }
 
