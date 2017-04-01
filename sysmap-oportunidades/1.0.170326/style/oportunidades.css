@@ -31,6 +31,12 @@
     padding-top: 30px;
 }
 
+@media (max-width: 700px){
+	.page-internal {
+		padding-top: 0;
+	}
+}
+
 .page-internal h4 {
 	margin-bottom: 10px;
 }
