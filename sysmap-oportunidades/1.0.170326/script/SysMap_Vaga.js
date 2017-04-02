@@ -64,7 +64,7 @@ SysMap_Vaga_UI = (function () {
 
 			var titulo = $(".s-page-title");
 			$("<p>",{
-				html: "Estamos à procura de um <strong>{0}</strong>.".format(SysMap_Vaga.dados.nome)
+				html: "Estamos procurando um <strong>{0}</strong>.".format(SysMap_Vaga.dados.nome)
 			}).appendTo(titulo);
 
 			$("<a>",{
