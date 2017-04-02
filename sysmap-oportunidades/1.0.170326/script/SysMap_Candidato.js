@@ -70,9 +70,9 @@ SysMap_Candidato_UI = (function () {
 	}
 
 	function submeterFormulario(){
-		var nome = $("#sysmap-candidato-nome").val();
-		var email = $("#sysmap-candidato-email").val();
-		var telefone = $("#sysmap-candidato-telefone").val();
+		var nome = $("#sm-candidato-nome").val();
+		var email = $("#sm-candidato-email").val();
+		var telefone = $("#sm-candidato-telefone").val();
 
 		var erros = [];
 
@@ -83,7 +83,7 @@ SysMap_Candidato_UI = (function () {
 		if(!email){
 			erros.push("Informe seu e-mail no formulário abaixo.");
 		}else{
-			if(!$("#sysmap-candidato-email").get(0).validity.valid){
+			if(!$("#sm-candidato-email").get(0).validity.valid){
 				erros.push("Informe um e-mail válido: \"x@y.com.br\".");
 			}
 		}
@@ -91,32 +91,32 @@ SysMap_Candidato_UI = (function () {
 		if(!telefone){
 			erros.push("Informe seu telefone no formulário abaixo.");
 		}else{
-			if(!$("#sysmap-candidato-telefone").get(0).validity.valid){
+			if(!$("#sm-candidato-telefone").get(0).validity.valid){
 				erros.push("Informe um telefone válido: \"11 999999999\".");
 			}
 		}
 
 		if(erros.length > 0){
-			$("#sysmap-candidato-form-erros")
+			$("#sm-candidato-form-erro")
 			.html(erros.join("<br/>"))
 			.show();
 		}else{
 			SysMap_Analytics.enviarCandidatoSubmete();
-			$("#sysmap-candidato-form-erros")
+			$("#sm-candidato-form-erro")
 			.html("")
 			.hide();
-			$("#sysmap-candidato-form-sucesso")
+			$("#sm-candidato-form-sucesso")
 			.html("Registramos seu interesse nesta vaga!<br/>Por favor, nos envie seu CV no endereço <strong>" +
 			SysMap_Vaga.dados.contato.email + "</strong>, informando no assunto <strong>\"" + SysMap_Vaga.dados.contato.assunto + "\"</strong>.")
 			.show();
-			$("#sysmap-candidato-form").hide();
+			$("#sm-candidato-form").hide();
 		}
 
 	}
 
 	function iniciar(){
-		$("#sysmap-candidato-email").focusout(submeterCampo);
-		$("#sysmap-candidato-enviar").click(submeterFormulario);
+		$("#sm-candidato-email").focusout(submeterCampo);
+		$("#sm-candidato-enviar").click(submeterFormulario);
 	}
 
 	function atualizarCampo(seletor, campo){
@@ -128,8 +128,8 @@ SysMap_Candidato_UI = (function () {
 	}
 
 	function atualizar(){
-		atualizarCampo("#sysmap-candidato-nome", "nome");
-		atualizarCampo("#sysmap-candidato-email", "email");
+		atualizarCampo("#sm-candidato-nome", "nome");
+		atualizarCampo("#sm-candidato-email", "email");
 	}
 
 	return {

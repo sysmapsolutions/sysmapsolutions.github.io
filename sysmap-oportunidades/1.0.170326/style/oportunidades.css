@@ -156,3 +156,10 @@
 .page-internal .form-mensagens strong{
 	font-family: dinregular;
 }
+
+erro{
+	font-weight: bold;
+	font-family: dinregular;
+	background-color: #e94f64;
+	display: block;
+}
