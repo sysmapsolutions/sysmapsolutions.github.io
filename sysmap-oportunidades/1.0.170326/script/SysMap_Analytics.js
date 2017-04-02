@@ -8,7 +8,7 @@ SysMap_Analytics = (function () {
 
 	function enviar(comando, config){
 		ga(SysMap_Analytics_TRACKER + "." + comando, config);
-		console.dir({
+		console.debug(JSON.stringify({
 			comando: comando,
 			config: config
 		});
