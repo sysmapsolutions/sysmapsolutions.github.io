@@ -131,8 +131,7 @@
 	font-weight: bold;
 }
 
-.sm-candidato-form button:hover,
-.sm-candidato-form button:focus {
+.sm-candidato-form button:hover {
   background: #1abc9c;
 }
 
