@@ -109,7 +109,7 @@ SysMap_Candidato_UI = (function () {
 			.html("Registramos seu interesse nesta vaga!<br/>Por favor, nos envie seu CV no endereço <strong>" +
 			SysMap_Vaga.dados.contato.email + "</strong>, informando no assunto <strong>\"" + SysMap_Vaga.dados.contato.assunto + "\"</strong>.")
 			.show();
-			$("#sm-candidato-form").hide();
+			$("#sm-candidato-form form").hide();
 		}
 
 	}
