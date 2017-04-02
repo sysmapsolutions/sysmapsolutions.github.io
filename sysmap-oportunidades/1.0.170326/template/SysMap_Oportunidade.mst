@@ -39,7 +39,7 @@
 <p>Para ver outras oportunidades e se candidatar, <a href="/web/guest/trabalhe-conosco">acesse aqui</a>.</p>
 {{/dados.nome}}
 
-<a name="myanchor">
+<a id="candidate-se">
 	<h4 style="padding-top: 40px; margin-top: -40px;">Cadastre-se</h4>
 </a>
 <br/>
