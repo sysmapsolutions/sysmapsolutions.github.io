@@ -40,6 +40,6 @@
 {{/dados.nome}}
 
 <a id="candidate-se">
-	<h4 style="padding-top: 40px; margin-top: -40px;">.</h4>
+	<h4 style="padding-top:40px;margin-top:-40px;color:#fff;">.</h4>
 </a>
 <br/>
