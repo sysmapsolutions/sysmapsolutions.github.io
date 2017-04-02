@@ -110,13 +110,13 @@ SysMap_Candidato_UI = (function () {
 
 			var mensagem = "Registramos seu interesse nesta vaga!<br/>";
 
-			if(SysMap_Vaga.dados && SysMap_Vaga.dados.contato.email){
+			if(SysMap_Vaga.dados && SysMap_Vaga.dados.contato && SysMap_Vaga.dados.contato.email){
 				mensagem += "Por favor, nos envie seu CV no endereço <strong>" + SysMap_Vaga.dados.contato.email + "</strong>";
 			}else{
 				mensagem += "Por favor, nos envie seu CV no endereço <strong>rh@sysmap.com.br</strong>";
 			}
 
-			if(SysMap_Vaga.dados && SysMap_Vaga.dados.contato.assunto){
+			if(SysMap_Vaga.dados && SysMap_Vaga.dados.contato && SysMap_Vaga.dados.contato.assunto){
 				mensagem += ", informando no assunto <strong>\"" + SysMap_Vaga.dados.contato.assunto + "\"</strong>";
 			}
 			mensagem += ".";
