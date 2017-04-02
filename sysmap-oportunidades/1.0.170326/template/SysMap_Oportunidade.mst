@@ -38,6 +38,5 @@
 <p>Este endereço não corresponde à uma oportunidade vigente na SysMap.</p>
 <p>Para ver outras oportunidades e se candidatar, <a href="/web/guest/trabalhe-conosco">acesse aqui</a>.</p>
 {{/dados.nome}}
-<a id="candidate-se">
-	<h4 style="padding-top:40px;margin-top:-40px;color:#fff;">.</h4>
-</a>
+
+<a id="candidate-se"><h4>.</h4></a>

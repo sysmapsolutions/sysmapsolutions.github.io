@@ -167,3 +167,18 @@
 	text-align: center;
 	margin: 20px 0px;
 }
+
+#candidate-se,
+#candidate-se:link,
+#candidate-se:visited,
+#candidate-se:hover,
+#candidate-se:active{
+	text-decoration: none;
+	color: #fff;
+}
+
+#candidate-se h4{
+	padding-top: 40px;
+	margin-top: -40px;
+	color: #fff;
+}
