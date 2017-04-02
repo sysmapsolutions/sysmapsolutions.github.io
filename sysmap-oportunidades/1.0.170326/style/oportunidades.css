@@ -114,52 +114,42 @@
 }
 
 .sm-candidato-form button{
+	display: block;
+  width: 100%;
+	background: #16a085;
+	color: #ffffff;
 	border: 0;
 	outline: none;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	background: #1ab188;
-	color: #ffffff;
-	display: block;
-  width: 100%;
 	font-family: dinregular;
 	font-size: 21px;
 	line-height: 28px;
+	font-weight: bold;
 }
 
 .sm-candidato-form button:hover,
 .sm-candidato-form button:focus {
-  background: #179b77;
+  background: #1abc9c;
 }
 
-
-.formArea {
-    border-width: 0;
-    border-style: solid;
-    border-color: #e4e4e4;
-    width: 90%;
-    max-width: 980px;
-    margin: 0 auto 30px;
-}
-
-
-
-.page-internal .linkedin-button,
-.page-internal .form-mensagens{
+.sm-candidato-form .linkedin,
+.sm-candidato-form-mensagens{
 	text-align: center;
 }
 
-.page-internal .form-mensagens span{
+.sm-candidato-form-mensagens span{
 	text-align: left;
 }
 
-.page-internal .form-mensagens strong{
+.sm-candidato-form-mensagens strong{
 	font-family: dinregular;
 }
 
-erro{
-	font-weight: bold;
-	font-family: dinregular;
-	background-color: #e94f64;
+#sm-candidato-form-erro{
+	font-family: din_lightregular;
+	background-color: #e74c3c;
 	display: block;
+	font-size: 15px;
+	line-height: 20px;
 }
