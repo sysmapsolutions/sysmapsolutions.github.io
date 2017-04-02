@@ -34,7 +34,7 @@ SysMap_Analytics = (function () {
 		var texto;
 
 		try{
-			if(SysMap_Candidato && SysMap_Candidato.email){
+			if(window.SysMap_Candidato && SysMap_Candidato.email){
 				enviar("set", {
 					"userId": SysMap_Candidato.email
 				});
@@ -42,7 +42,7 @@ SysMap_Analytics = (function () {
 				texto = SysMap_Analytics.id + "/email/" + SysMap_Candidato.email;
 				enviarEvento(acao, texto);
 			}
-			if(SysMap_Candidato && SysMap_Candidato.dados){
+			if(window.SysMap_Candidato && SysMap_Candidato.dados){
 				if(SysMap_Candidato.dados.nome){
 					texto = SysMap_Analytics.id + "/nome/" + SysMap_Candidato.dados.nome;
 					enviarEvento(acao, texto);
