@@ -67,28 +67,30 @@ SysMap_Analytics = (function () {
 	}
 
 	function enviarVaga(){
-		if(SysMap_Vaga.dados.nome){
-			document.title = SysMap_Vaga.dados.nome + " (#" + SysMap_Vaga.codigo + ") - SysMap";
-		}else{
-			document.title = "Erro: Vaga Não Encontrada - SysMap";
-		}
+		ga(function() {
+			if(SysMap_Vaga.dados.nome){
+				document.title = SysMap_Vaga.dados.nome + " (#" + SysMap_Vaga.codigo + ") - SysMap";
+			}else{
+				document.title = "Erro: Vaga Não Encontrada - SysMap";
+			}
 
-		if(SysMap_Vaga.codigo){
-			enviar("set", {
-				"page": "/vagas/" + SysMap_Vaga.codigo
-			});
-		}else{
-			enviar("set", {
-				"location": location.href
-			});
-		}
+			if(SysMap_Vaga.codigo){
+				enviar("set", {
+					"page": "/vagas/" + SysMap_Vaga.codigo
+				});
+			}else{
+				enviar("set", {
+					"location": location.href
+				});
+			}
 
-		enviar("send", {
-			hitType: "pageview",
-			title: document.title
+			enviar("send", {
+				hitType: "pageview",
+				title: document.title
+			});
+
+			enviarCandidatoVeVaga();
 		});
-
-		enviarCandidatoVeVaga();
 	}
 
 	function enviarCandidatoVeVaga(){
