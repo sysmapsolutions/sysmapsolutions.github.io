@@ -102,6 +102,10 @@ SysMap_Candidato_UI = (function () {
 			.html(erros.join("<br/>"))
 			.show();
 		}else{
+			SysMap_Candidato.email = email;
+			SysMap_Candidato.dados.nome = nome;
+			SysMap_Candidato.dados.telefone = telefone;
+
 			SysMap_Analytics.enviarCandidatoSubmete();
 			$("#sm-candidato-form-erro")
 			.html("")
