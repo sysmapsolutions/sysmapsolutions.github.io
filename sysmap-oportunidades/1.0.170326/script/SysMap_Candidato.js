@@ -61,7 +61,7 @@ SysMap_Candidato = (function () {
 })();
 
 SysMap_Candidato_UI = (function () {
-	function submeterCampo(){
+	function submeterEmail(){
 		var email = $(this).val();
 		if(email && email != SysMap_Candidato.email){
 			SysMap_Candidato.email = email;
@@ -70,9 +70,9 @@ SysMap_Candidato_UI = (function () {
 	}
 
 	function submeterFormulario(){
-		var nome = $("#sm-candidato-nome").val();
-		var email = $("#sm-candidato-email").val();
-		var telefone = $("#sm-candidato-telefone").val();
+		var nome = SysMap_Candidato.dados.nome = $("#sm-candidato-nome").val();
+		var email = SysMap_Candidato.email = $("#sm-candidato-email").val();
+		var telefone = SysMap_Candidato.dados.nome = $("#sm-candidato-telefone").val();
 
 		var erros = [];
 
@@ -115,7 +115,7 @@ SysMap_Candidato_UI = (function () {
 	}
 
 	function iniciar(){
-		$("#sm-candidato-email").focusout(submeterCampo);
+		$("#sm-candidato-email").focusout(submeterEmail);
 		$("#sm-candidato-enviar").click(submeterFormulario);
 	}
 
