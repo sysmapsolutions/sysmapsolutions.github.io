@@ -66,6 +66,11 @@ SysMap_Analytics = (function () {
 		}
 	}
 
+	function enviarCandidatoVeVaga(){
+		var acao = "viu vaga/" + SysMap_Vaga.codigo;
+		enviarEventoDados(acao);
+	}
+
 	function enviarVaga(){
 		ga(function() {
 			if(SysMap_Vaga.dados.nome){
@@ -91,11 +96,6 @@ SysMap_Analytics = (function () {
 
 			enviarCandidatoVeVaga();
 		});
-	}
-
-	function enviarCandidatoVeVaga(){
-		var acao = "viu vaga/" + SysMap_Vaga.codigo;
-		enviarEventoDados(acao);
 	}
 
 	function enviarCandidatoLinkedIn(){
