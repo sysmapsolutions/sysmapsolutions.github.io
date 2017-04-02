@@ -85,7 +85,7 @@
 .sm-candidato-form {
   background: #00a1f1;
   padding: 20px;
-  max-width: 300px;
+  max-width: 400px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -161,8 +161,8 @@
 
 
 #sm-candidato-form-sucesso{
-	font-size: 15px;
-	line-height: 20px;
+	font-size: 18px;
+	line-height: 24px;
 	font-family: din_lightregular;
 	display: block;
 	text-align: center;
