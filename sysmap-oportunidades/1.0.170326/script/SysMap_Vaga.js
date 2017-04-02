@@ -12,6 +12,7 @@ SysMap_Vaga = (function () {
 	}
 
 	function vagaNaoRetornada(){
+		this.codigo = "(" + this.codigo + ")";
 		SysMap_Analytics.enviarVaga();
 		SysMap_Vaga_UI.atualizar();
 	}
@@ -20,10 +21,15 @@ SysMap_Vaga = (function () {
 		this.codigo = codigo;
 		this.dados = {};
 
-		$.ajax({
-			url: SysMap_Vaga_URL.format(codigo),
-			context: this
-		}).done(vagaRetornada).fail(vagaNaoRetornada);
+		if(this.codigo){
+			$.ajax({
+				url: SysMap_Vaga_URL.format(codigo),
+				context: this
+			}).done(vagaRetornada).fail(vagaNaoRetornada);
+		}else{
+			this.codigo = "vazio";
+			vagaNaoRetornada();
+		}
 	}
 
 	return {
