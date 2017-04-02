@@ -27,6 +27,7 @@ SysMap_Vaga = (function () {
 	}
 
 	return {
+		dados: dados,
 		carregar: carregar
 	}
 })();
@@ -69,7 +70,6 @@ SysMap_Vaga_UI = (function () {
 	}
 
 	return {
-		dados: dados,
 		atualizar: atualizar
 	}
 })();
