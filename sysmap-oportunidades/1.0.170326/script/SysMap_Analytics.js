@@ -62,6 +62,7 @@ SysMap_Analytics = (function () {
 			}
 		}catch(erro){
 			enviarErro(erro);
+			console.error(erro);
 		}
 	}
 
