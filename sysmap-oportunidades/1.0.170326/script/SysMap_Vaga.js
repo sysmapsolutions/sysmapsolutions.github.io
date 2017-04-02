@@ -12,7 +12,9 @@ SysMap_Vaga = (function () {
 	}
 
 	function vagaNaoRetornada(){
-		this.codigo = "(" + this.codigo + ")";
+		if(this.codigo.charAt(0) != "("){
+			this.codigo = "(" + this.codigo + ")";
+		}
 		SysMap_Analytics.enviarVaga();
 		SysMap_Vaga_UI.atualizar();
 	}
@@ -27,7 +29,7 @@ SysMap_Vaga = (function () {
 				context: this
 			}).done(vagaRetornada).fail(vagaNaoRetornada);
 		}else{
-			this.codigo = "vazio";
+			this.codigo = "(vazio)";
 			vagaNaoRetornada();
 		}
 	}
