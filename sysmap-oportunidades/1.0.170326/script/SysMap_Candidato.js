@@ -70,9 +70,9 @@ SysMap_Candidato_UI = (function () {
 	}
 
 	function submeterFormulario(){
-		var nome = SysMap_Candidato.dados.nome = $("#sm-candidato-nome").val();
-		var email = SysMap_Candidato.email = $("#sm-candidato-email").val();
-		var telefone = SysMap_Candidato.dados.nome = $("#sm-candidato-telefone").val();
+		var nome = $("#sm-candidato-nome").val();
+		var email = $("#sm-candidato-email").val();
+		var telefone = $("#sm-candidato-telefone").val();
 
 		var erros = [];
 
