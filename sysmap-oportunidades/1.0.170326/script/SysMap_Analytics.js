@@ -11,7 +11,7 @@ SysMap_Analytics = (function () {
 		console.debug(JSON.stringify({
 			comando: comando,
 			config: config
-		});
+		}));
 	}
 
 	function enviarEvento(acao, texto){
