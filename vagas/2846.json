@@ -1,1 +1,10 @@
-[{"parentIndex":24,"parentId":"2846","index":0,"nome":"Código","valor":"2846"},{"parentIndex":24,"parentId":"2846","index":1,"nome":"Título da vaga","valor":"Analista de Sistemas SR"},{"parentIndex":24,"parentId":"2846","index":2,"nome":"Local","valor":"São Paulo, SP"},{"parentIndex":24,"parentId":"2846","index":3,"nome":"Nível Profissional","valor":"Analista"},{"parentIndex":24,"parentId":"2846","index":4,"nome":"Nível Acadêmico","valor":"Ensino Superior Completo"},{"parentIndex":24,"parentId":"2846","index":5,"nome":"Áreas de Atuação Profissional","valor":"TI - Desenvolvimento/Programação"},{"parentIndex":24,"parentId":"2846","index":6,"nome":"Descrição","valor":"Atuar no desenvolvimento e manutenção evolutiva e corretiva de sistemas e/ou aplicações JAVA"},{"parentIndex":24,"parentId":"2846","index":7,"nome":"Habilidades","valor":"Conhecimento em aplicações JavaEE com Hibernate, JPA, EJB, JSF, STRUTS, JSTL, WebServices, JMS e RMI. \nServidor de aplicação: Weblogic, Websphere, Jboss e/ou Oracle Application Server. \nBancos de dados Oracle e SQL Server(Desejável). \nDesenvolvimento Web HTML, JSP, CSS, Javascript, JQuery, XSLT, XML, AJAX \nModelagem OO\n\nSun Certified Java Associate (SCJA) ou Sun Certified Java Programmer (SCJP)\n\nDiferencial: Experiência no framework GWT (Google Web Toolkit)"}]
+{
+  "Código": "2846",
+  "Título da vaga": "Analista de Sistemas SR",
+  "Local": "São Paulo, SP",
+  "Nível Profissional": "Analista",
+  "Nível Acadêmico": "Ensino Superior Completo",
+  "Áreas de Atuação Profissional": "TI - Desenvolvimento/Programação",
+  "Descrição": "Atuar no desenvolvimento e manutenção evolutiva e corretiva de sistemas e/ou aplicações JAVA",
+  "Habilidades": "Conhecimento em aplicações JavaEE com Hibernate, JPA, EJB, JSF, STRUTS, JSTL, WebServices, JMS e RMI. \nServidor de aplicação: Weblogic, Websphere, Jboss e/ou Oracle Application Server. \nBancos de dados Oracle e SQL Server(Desejável). \nDesenvolvimento Web HTML, JSP, CSS, Javascript, JQuery, XSLT, XML, AJAX \nModelagem OO\n\nSun Certified Java Associate (SCJA) ou Sun Certified Java Programmer (SCJP)\n\nDiferencial: Experiência no framework GWT (Google Web Toolkit)"
+}

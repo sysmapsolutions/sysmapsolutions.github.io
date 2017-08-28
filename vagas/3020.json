@@ -1,1 +1,10 @@
-[{"parentIndex":5,"parentId":"3020","index":0,"nome":"Código","valor":"3020"},{"parentIndex":5,"parentId":"3020","index":1,"nome":"Título da vaga","valor":"Analista de Infraestrutura SR"},{"parentIndex":5,"parentId":"3020","index":2,"nome":"Local","valor":"São Paulo, SP"},{"parentIndex":5,"parentId":"3020","index":3,"nome":"Nível Profissional","valor":"Analista"},{"parentIndex":5,"parentId":"3020","index":4,"nome":"Nível Acadêmico","valor":"Ensino Superior Completo"},{"parentIndex":5,"parentId":"3020","index":5,"nome":"Áreas de Atuação Profissional","valor":"TI - Projetos"},{"parentIndex":5,"parentId":"3020","index":6,"nome":"Descrição","valor":"Suporte e administração de produtos Middleware para plataforma IBM\n - WebSphere\n - IIB\n - ISAM\n - MQ Series.\n\nAdministração avançada em sistemas operacionais Linux. Conhecimentos em VMWare."},{"parentIndex":5,"parentId":"3020","index":7,"nome":"Habilidades","valor":"Conhecimentos avançados em sistemas operacionais Linux. \nExperiência em suporte e administração de produtos Middleware para plataforma IBM: WAS, ISAM, IIB, WebSphere, MQ Series e SSO.\nConhecimentos em VMWare"}]
+{
+  "Código": "3020",
+  "Título da vaga": "Analista de Infraestrutura SR",
+  "Local": "São Paulo, SP",
+  "Nível Profissional": "Analista",
+  "Nível Acadêmico": "Ensino Superior Completo",
+  "Áreas de Atuação Profissional": "TI - Projetos",
+  "Descrição": "Suporte e administração de produtos Middleware para plataforma IBM\n - WebSphere\n - IIB\n - ISAM\n - MQ Series.\n\nAdministração avançada em sistemas operacionais Linux. Conhecimentos em VMWare.",
+  "Habilidades": "Conhecimentos avançados em sistemas operacionais Linux. \nExperiência em suporte e administração de produtos Middleware para plataforma IBM: WAS, ISAM, IIB, WebSphere, MQ Series e SSO.\nConhecimentos em VMWare"
+}

@@ -1,1 +1,10 @@
-[{"parentIndex":8,"parentId":"3011","index":0,"nome":"Código","valor":"3011"},{"parentIndex":8,"parentId":"3011","index":1,"nome":"Título da vaga","valor":"Estagiário"},{"parentIndex":8,"parentId":"3011","index":2,"nome":"Local","valor":"Belo Horizonte, MG"},{"parentIndex":8,"parentId":"3011","index":3,"nome":"Nível Profissional","valor":"Estagiário"},{"parentIndex":8,"parentId":"3011","index":4,"nome":"Nível Acadêmico","valor":"Ensino Superior Cursando"},{"parentIndex":8,"parentId":"3011","index":5,"nome":"Áreas de Atuação Profissional","valor":"TI - Desenvolvimento/Design"},{"parentIndex":8,"parentId":"3011","index":6,"nome":"Descrição","valor":"Auxiliar no desenvolvimento de projetos de identidade visual,responsável pelas atividades de artes gráficas, desenvolvimento de interfaces diversas (Logotipos, Banners, folders, etc), criação da comunicação online (redes sociais, e-mail marketing, etc), criação e tratamentos de imagens em geral."},{"parentIndex":8,"parentId":"3011","index":7,"nome":"Habilidades","valor":"Estudante de Design Gráfico, Desenho Industrial, Comunicação Social, Publicidade e Propaganda ou Programação visual.\n\n Desejável conhecimento dos programas Photoshop, Corel Draw, Flash e pacote Office. \nDesejável conhecimento em HTML, CSS ou Javascrip\n\nApresentar resultados de trabalhos anteriores (Ex: portfólio de protótipos construídos pelo candidato)"}]
+{
+  "Código": "3011",
+  "Título da vaga": "Estagiário",
+  "Local": "Belo Horizonte, MG",
+  "Nível Profissional": "Estagiário",
+  "Nível Acadêmico": "Ensino Superior Cursando",
+  "Áreas de Atuação Profissional": "TI - Desenvolvimento/Design",
+  "Descrição": "Auxiliar no desenvolvimento de projetos de identidade visual,responsável pelas atividades de artes gráficas, desenvolvimento de interfaces diversas (Logotipos, Banners, folders, etc), criação da comunicação online (redes sociais, e-mail marketing, etc), criação e tratamentos de imagens em geral.",
+  "Habilidades": "Estudante de Design Gráfico, Desenho Industrial, Comunicação Social, Publicidade e Propaganda ou Programação visual.\n\n Desejável conhecimento dos programas Photoshop, Corel Draw, Flash e pacote Office. \nDesejável conhecimento em HTML, CSS ou Javascrip\n\nApresentar resultados de trabalhos anteriores (Ex: portfólio de protótipos construídos pelo candidato)"
+}

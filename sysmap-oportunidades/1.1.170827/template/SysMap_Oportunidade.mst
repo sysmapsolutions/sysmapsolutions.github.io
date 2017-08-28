@@ -1,0 +1,43 @@
+{{#dados.nome}}
+<h3>{{ dados.nome }} (#{{ codigo }})</h3>
+
+{{#dados.descricao}}
+<p>{{.}}</p>
+{{/dados.descricao}}
+
+<h4>Responsabilidades</h4>
+<ul>
+{{#dados.responsabilidades}}
+	<li>{{.}}</li>
+{{/dados.responsabilidades}}
+</ul>
+
+<h4>Educação e Experiências</h4>
+<ul>
+{{#dados.experiencias}}
+	<li>{{.}}</li>
+{{/dados.experiencias}}
+</ul>
+
+<h4>Atributos Pessoais</h4>
+<ul>
+{{#dados.atributos}}
+	<li>{{.}}</li>
+{{/dados.atributos}}
+</ul>
+
+<h4>Outras Informações</h4>
+{{#dados.outros}}
+	<p>{{.}}</p>
+{{/dados.outros}}
+
+{{/dados.nome}}
+
+{{^dados.nome}}
+<h3>Vaga Não Encontrada!</h3>
+<p>Este endereço não corresponde à uma oportunidade vigente na SysMap.</p>
+<p>Para ver outras oportunidades e se candidatar, <a href="/web/guest/trabalhe-conosco">acesse aqui</a>.</p>
+{{/dados.nome}}
+
+<a id="candidate-se"><h4>.</h4></a>
+<br/>

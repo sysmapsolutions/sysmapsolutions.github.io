@@ -1,0 +1,183 @@
+.s-page-title .s-btn {
+	width: 160px;
+	background: #00a1f1;
+	color: #dedede;
+	padding: 10px;
+	border: 0;
+	font-family: dinregular;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.s-page-title .s-btn:link,
+.s-page-title .s-btn:visited,
+.s-page-title .s-btn:hover,
+.s-page-title .s-btn:active{
+	text-decoration: none;
+	color: white;
+}
+
+.s-page-title strong{
+	font-family: dinregular;
+	font-weight: bold;
+}
+
+.page-internal {
+    padding-top: 30px;
+}
+
+@media (max-width: 1250px){
+	.page-internal {
+		padding-top: 0;
+	}
+}
+.page-container .row {
+    margin-bottom: 15px;
+}
+
+.page-internal h3 {
+    font-size: 36px;
+		line-height: 48px;
+}
+
+@media (max-width: 700px){
+	.page-internal h3 {
+		font-size: 27px;
+    line-height: 36px;
+	}
+}
+
+.page-internal h4 {
+    font-size: 27px;
+		line-height: 36px;
+		margin-top: 20px;
+}
+
+
+@media (max-width: 700px){
+	.page-internal h4 {
+		font-size: 21px;
+    line-height: 28px;
+	}
+}
+
+
+.page-internal p,
+.page-internal li {
+    font-size: 18px;
+		font-family: din_lightregular;
+    line-height: 24px;
+}
+
+.page-internal ul {
+	list-style-type: square;
+}
+
+
+.sm-candidato-form {
+  background: #00a1f1;
+  padding: 20px;
+  max-width: 300px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+	color: #fff;
+}
+
+.sm-candidato-form h4{
+	margin-top: 0;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.sm-candidato-form p{
+	font-family: din_lightregular;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.sm-candidato-form input{
+  width: 95%;
+  height: 100%;
+  padding: 5px 10px;
+	font-family: dinregular;
+}
+
+.sm-candidato-form input:focus{
+  outline: 0;
+}
+
+.sm-candidato-form button{
+	margin-top: 20px;
+	display: block;
+  width: 100%;
+	background: #16a085;
+	color: #ffffff;
+	border: 0;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-family: dinregular;
+	font-size: 21px;
+	line-height: 28px;
+	font-weight: bold;
+}
+
+.sm-candidato-form button:hover {
+  background: #1abc9c;
+}
+
+.sm-candidato-form .linkedin,
+.sm-candidato-form-mensagens{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.sm-candidato-form-mensagens span{
+	padding: 5px 0px;
+}
+
+.sm-candidato-form-mensagens strong{
+	font-family: dinregular;
+}
+
+#sm-candidato-form-erro{
+	font-family: din_lightregular;
+	background-color: #e74c3c;
+	display: block;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+
+
+#sm-candidato-form-sucesso{
+	font-size: 15px;
+	line-height: 20px;
+	font-family: din_lightregular;
+	display: block;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+#candidate-se,
+#candidate-se:link,
+#candidate-se:visited,
+#candidate-se:hover,
+#candidate-se:active{
+	text-decoration: none;
+	color: #fff;
+}
+
+#candidate-se h4{
+	padding-top: 40px;
+	margin-top: -40px;
+}

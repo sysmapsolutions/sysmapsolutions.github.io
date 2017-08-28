@@ -1,1 +1,10 @@
-[{"parentIndex":21,"parentId":"2915","index":0,"nome":"Código","valor":"2915"},{"parentIndex":21,"parentId":"2915","index":1,"nome":"Título da vaga","valor":"Gerente de Negócios II"},{"parentIndex":21,"parentId":"2915","index":2,"nome":"Local","valor":"São Paulo, SP"},{"parentIndex":21,"parentId":"2915","index":3,"nome":"Nível Profissional","valor":"Líder"},{"parentIndex":21,"parentId":"2915","index":4,"nome":"Nível Acadêmico","valor":"Ensino Superior Completo"},{"parentIndex":21,"parentId":"2915","index":5,"nome":"Áreas de Atuação Profissional","valor":"Comercial"},{"parentIndex":21,"parentId":"2915","index":6,"nome":"Descrição","valor":"Profissional com grande base de clientes. Experiência na abertura de contas não exploradas. Abordagem de desenvolvimento de novos negócios.\nPlanejamento estratégico\nInteresse em novas tecnologias, incluindo: User Experience, Design Thinking, Open Innovation e desenvolvimento de aplicativos mobile."},{"parentIndex":21,"parentId":"2915","index":7,"nome":"Habilidades","valor":"Pacote Office avançado."}]
+{
+  "Código": "2915",
+  "Título da vaga": "Gerente de Negócios II",
+  "Local": "São Paulo, SP",
+  "Nível Profissional": "Líder",
+  "Nível Acadêmico": "Ensino Superior Completo",
+  "Áreas de Atuação Profissional": "Comercial",
+  "Descrição": "Profissional com grande base de clientes. Experiência na abertura de contas não exploradas. Abordagem de desenvolvimento de novos negócios.\nPlanejamento estratégico\nInteresse em novas tecnologias, incluindo: User Experience, Design Thinking, Open Innovation e desenvolvimento de aplicativos mobile.",
+  "Habilidades": "Pacote Office avançado."
+}

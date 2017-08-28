@@ -1,1 +1,10 @@
-[{"parentIndex":16,"parentId":"2974","index":0,"nome":"Código","valor":"2974"},{"parentIndex":16,"parentId":"2974","index":1,"nome":"Título da vaga","valor":"Analista de Sistemas SR"},{"parentIndex":16,"parentId":"2974","index":2,"nome":"Local","valor":"Belo Horizonte, MG"},{"parentIndex":16,"parentId":"2974","index":3,"nome":"Nível Profissional","valor":"Analista"},{"parentIndex":16,"parentId":"2974","index":4,"nome":"Nível Acadêmico","valor":"Ensino Superior Completo"},{"parentIndex":16,"parentId":"2974","index":5,"nome":"Áreas de Atuação Profissional","valor":"TI - Desenvolvimento/Programação"},{"parentIndex":16,"parentId":"2974","index":6,"nome":"Descrição","valor":"- Compor equipe de desenvolvimento de demandas / projetos utilizando Metodologia Ágil\n- Desenvolvimento de backend;\n- informações de filtros.\n- Testes unitários da solução\n- Correção de bugs durante Homologação"},{"parentIndex":16,"parentId":"2974","index":7,"nome":"Habilidades","valor":"Necessário\n- Experiência: mínimo de 1 ano em implementação de microsserviços\n\n- Apache Camel\n- AMQP\n- MyBatis\n\n- Metodologia ágil (ex: Scrum)\n- Linguagem SQL\n\nDesejável\n- Undertow\n- Sprint Boot\n- Padrões JSON API http://jsonapi.org e Open API http://openapis.org\n\nDiferencial\n- Docker\n- Kubernetes\n- OAG\n- Axway Platform"}]
+{
+  "Código": "2974",
+  "Título da vaga": "Analista de Sistemas SR",
+  "Local": "Belo Horizonte, MG",
+  "Nível Profissional": "Analista",
+  "Nível Acadêmico": "Ensino Superior Completo",
+  "Áreas de Atuação Profissional": "TI - Desenvolvimento/Programação",
+  "Descrição": "- Compor equipe de desenvolvimento de demandas / projetos utilizando Metodologia Ágil\n- Desenvolvimento de backend;\n- informações de filtros.\n- Testes unitários da solução\n- Correção de bugs durante Homologação",
+  "Habilidades": "Necessário\n- Experiência: mínimo de 1 ano em implementação de microsserviços\n\n- Apache Camel\n- AMQP\n- MyBatis\n\n- Metodologia ágil (ex: Scrum)\n- Linguagem SQL\n\nDesejável\n- Undertow\n- Sprint Boot\n- Padrões JSON API http://jsonapi.org e Open API http://openapis.org\n\nDiferencial\n- Docker\n- Kubernetes\n- OAG\n- Axway Platform"
+}

@@ -1,1 +1,10 @@
-[{"parentIndex":11,"parentId":"2998","index":0,"nome":"Código","valor":"2998"},{"parentIndex":11,"parentId":"2998","index":1,"nome":"Título da vaga","valor":"Analista de Infraestrutura PL"},{"parentIndex":11,"parentId":"2998","index":2,"nome":"Local","valor":"São Paulo, SP"},{"parentIndex":11,"parentId":"2998","index":3,"nome":"Nível Profissional","valor":"Analista"},{"parentIndex":11,"parentId":"2998","index":4,"nome":"Nível Acadêmico","valor":"Ensino Superior Completo"},{"parentIndex":11,"parentId":"2998","index":5,"nome":"Áreas de Atuação Profissional","valor":"TI - Suporte"},{"parentIndex":11,"parentId":"2998","index":6,"nome":"Descrição","valor":"Manter o ambiente e atuar em intercorrências."},{"parentIndex":11,"parentId":"2998","index":7,"nome":"Habilidades","valor":"Conhecimento Desejável: Data Power, ISAM, SDS / LDAP, Websphere, IIB, MQ Series.\nBom relacionamento interpessoal.\nSkill de comunicação."}]
+{
+  "Código": "2998",
+  "Título da vaga": "Analista de Infraestrutura PL",
+  "Local": "São Paulo, SP",
+  "Nível Profissional": "Analista",
+  "Nível Acadêmico": "Ensino Superior Completo",
+  "Áreas de Atuação Profissional": "TI - Suporte",
+  "Descrição": "Manter o ambiente e atuar em intercorrências.",
+  "Habilidades": "Conhecimento Desejável: Data Power, ISAM, SDS / LDAP, Websphere, IIB, MQ Series.\nBom relacionamento interpessoal.\nSkill de comunicação."
+}
