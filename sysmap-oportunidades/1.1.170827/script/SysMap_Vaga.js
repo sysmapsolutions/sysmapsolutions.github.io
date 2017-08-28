@@ -1,4 +1,4 @@
-var SysMap_TEMPLATE_URL = "https://sysmapsolutions.github.io/sysmap-oportunidades/1.0.170326/template/{0}.mst";
+var SysMap_TEMPLATE_URL = "https://sysmapsolutions.github.io/sysmap-oportunidades/1.1.170827/template/{0}.mst";
 var SysMap_Vaga_URL = "https://sysmapsolutions.github.io/vagas/{0}.json";
 
 SysMap_Vaga = (function () {
